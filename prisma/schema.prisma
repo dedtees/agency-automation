@@ -1,0 +1,238 @@
+// Data model for the agency pipeline.
+// SQLite in development; switch `provider` to "postgresql" for production.
+// String fields marked "enum:" are validated in src/core/types.ts
+// (SQLite has no native enums).
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Client {
+  id           String   @id @default(cuid())
+  businessName String
+  contactName  String?
+  email        String?
+  phone        String?
+  website      String?
+  industry     String?
+  city         String?
+  state        String?
+  notes        String?
+  /// enum: PipelineStage
+  stage        String   @default("NEW")
+  favoriteConceptId String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  sources   ClientSource[]
+  concepts  Concept[]
+  portal    PortalAccess[]
+  feedback  Feedback[]
+  messages  OutboundMessage[]
+  orders    Order[]
+  events    PipelineEvent[]
+
+  @@index([email])
+  @@index([stage])
+}
+
+/// Where a client record came from. One client can be seen in several sources
+/// (e.g. QuickBooks and the Discord sheet); this keeps each link.
+model ClientSource {
+  id         String   @id @default(cuid())
+  clientId   String
+  client     Client   @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  /// enum: IntakeSourceId
+  source     String
+  externalId String
+  raw        Json?
+  importRunId String?
+  importedAt DateTime @default(now())
+
+  @@unique([source, externalId])
+}
+
+model ImportRun {
+  id         String    @id @default(cuid())
+  source     String
+  startedAt  DateTime  @default(now())
+  finishedAt DateTime?
+  created    Int       @default(0)
+  updated    Int       @default(0)
+  skipped    Int       @default(0)
+  errors     Json?
+}
+
+model Concept {
+  id             String   @id @default(cuid())
+  clientId       String
+  client         Client   @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  name           String
+  /// Starter theme / layout this concept is built from.
+  templateKey    String
+  styleDirection String?
+  palette        Json?
+  /// enum: ConceptStatus
+  status         String   @default("DRAFT")
+  previewUrl     String?
+  packagePath    String?
+  generator      String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  sections Section[]
+  feedback Feedback[]
+  orders   Order[]
+}
+
+model Section {
+  id        String  @id @default(cuid())
+  conceptId String
+  concept   Concept @relation(fields: [conceptId], references: [id], onDelete: Cascade)
+  /// enum: SectionKind
+  kind      String
+  title     String
+  position  Int
+  content   Json?
+  previewAnchor String?
+
+  feedback Feedback[]
+}
+
+/// A client's rating/comment on a section, or on a concept overall (sectionId null).
+model Feedback {
+  id        String   @id @default(cuid())
+  clientId  String
+  client    Client   @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  conceptId String
+  concept   Concept  @relation(fields: [conceptId], references: [id], onDelete: Cascade)
+  sectionId String?
+  section   Section? @relation(fields: [sectionId], references: [id], onDelete: Cascade)
+  rating    Int?
+  comment   String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([clientId, conceptId, sectionId])
+}
+
+/// Private, unguessable portal link per client. Only the hash is stored.
+model PortalAccess {
+  id           String    @id @default(cuid())
+  clientId     String
+  client       Client    @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  tokenHash    String    @unique
+  expiresAt    DateTime
+  revokedAt    DateTime?
+  lastViewedAt DateTime?
+  createdAt    DateTime  @default(now())
+}
+
+/// Outreach and transactional email. Drafts wait for approval when
+/// OUTREACH_REQUIRES_APPROVAL is on (the default).
+model OutboundMessage {
+  id         String    @id @default(cuid())
+  clientId   String
+  client     Client    @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  /// enum: MessageKind
+  kind       String
+  toEmail    String
+  subject    String
+  body       String
+  /// enum: MessageStatus
+  status     String    @default("PENDING_APPROVAL")
+  approvedBy String?
+  approvedAt DateTime?
+  sentAt     DateTime?
+  provider   String?
+  providerMessageId String?
+  error      String?
+  createdAt  DateTime  @default(now())
+
+  @@index([status])
+}
+
+model Order {
+  id          String   @id @default(cuid())
+  clientId    String
+  client      Client   @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  conceptId   String
+  concept     Concept  @relation(fields: [conceptId], references: [id])
+  /// enum: OfferKind
+  offer       String
+  /// enum: OrderStatus
+  status      String   @default("PENDING")
+  currency    String   @default("usd")
+  oneTimeCents   Int
+  monthlyCents   Int?
+  paymentProvider String
+  checkoutId     String?  @unique
+  checkoutUrl    String?
+  subscriptionId String?
+  paidAt      DateTime?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  deployment  Deployment?
+  delivery    TemplateDelivery?
+}
+
+model TemplateDelivery {
+  id          String   @id @default(cuid())
+  orderId     String   @unique
+  order       Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  downloadUrl String
+  expiresAt   DateTime?
+  createdAt   DateTime @default(now())
+}
+
+model Deployment {
+  id         String   @id @default(cuid())
+  orderId    String   @unique
+  order      Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  provider   String
+  /// enum: DeploymentStatus
+  status     String   @default("PROVISIONING")
+  siteUrl    String?
+  adminUrl   String?
+  externalId String?
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+
+/// Audit trail of every stage change and notable action.
+model PipelineEvent {
+  id        String   @id @default(cuid())
+  clientId  String
+  client    Client   @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  type      String
+  fromStage String?
+  toStage   String?
+  actor     String   @default("system")
+  data      Json?
+  createdAt DateTime @default(now())
+
+  @@index([clientId, createdAt])
+}
+
+/// Minimal DB-backed job queue so no extra infrastructure is needed.
+model Job {
+  id        String   @id @default(cuid())
+  type      String
+  payload   Json
+  /// enum: JobStatus
+  status    String   @default("QUEUED")
+  runAt     DateTime @default(now())
+  attempts  Int      @default(0)
+  maxAttempts Int    @default(5)
+  lastError String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([status, runAt])
+}
