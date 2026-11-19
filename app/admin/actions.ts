@@ -1,12 +1,15 @@
 "use server";
 // Owner actions from the admin dashboard.
 import { revalidatePath } from "next/cache";
+import { redirect } from "next/navigation";
 import { db } from "@/core/db";
 import { runImport } from "@/intake/importer";
 import { runDueJobs } from "@/jobs/queue";
 import { approveConcepts, requestConcepts } from "@/services/concepts";
 import { approveMessage, rejectMessage } from "@/services/outreach";
 import { transition } from "@/pipeline/engine";
+import { createPortalLink } from "@/services/portal";
+import { SAMPLE_DISCORD_CSV, SAMPLE_QUICKBOOKS_CSV } from "@/samples";
 
 export async function importFileAction(form: FormData) {
   const file = form.get("file") as File | null;
@@ -53,4 +56,17 @@ export async function holdClientAction(clientId: string) {
 export async function runJobsAction() {
   await runDueJobs(db);
   revalidatePath("/admin");
+}
+
+/** Loads a few fictional clients so the prototype has something to click through. */
+export async function loadSampleDataAction() {
+  await runImport(db, "discord_sheet", { fileName: "sample-discord.csv", data: SAMPLE_DISCORD_CSV });
+  await runImport(db, "quickbooks_csv", { fileName: "sample-quickbooks.csv", data: SAMPLE_QUICKBOOKS_CSV });
+  revalidatePath("/admin");
+}
+
+/** Opens the client's portal as the client sees it, without counting as client activity. */
+export async function viewAsClientAction(clientId: string) {
+  const { token } = await createPortalLink(db, clientId);
+  redirect(`/p/${token}?preview=1`);
 }

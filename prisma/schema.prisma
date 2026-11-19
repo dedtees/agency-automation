@@ -1,15 +1,17 @@
-// Data model for the agency pipeline.
-// SQLite in development; switch `provider` to "postgresql" for production.
-// String fields marked "enum:" are validated in src/core/types.ts
-// (SQLite has no native enums).
+// Data model for the agency pipeline. Postgres (Supabase in production).
+// String fields marked "enum:" are validated in src/core/types.ts, which keeps
+// adding a new stage or status a code change instead of a migration.
 
 generator client {
   provider = "prisma-client-js"
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = env("DATABASE_URL")
+  provider  = "postgresql"
+  /// Pooled connection (Supabase: port 6543, ?pgbouncer=true) used by the app.
+  url       = env("DATABASE_URL")
+  /// Direct connection (Supabase: port 5432) used for migrations.
+  directUrl = env("DIRECT_URL")
 }
 
 model Client {
