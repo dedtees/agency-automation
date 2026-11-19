@@ -3,14 +3,14 @@
   "version": "0.1.0",
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && prisma migrate deploy && next build",
+    "build": "node scripts/prisma.mjs generate && node scripts/prisma.mjs migrate && next build",
     "start": "next start",
     "worker": "tsx scripts/worker.ts",
     "import": "tsx scripts/import.ts",
     "demo": "tsx scripts/demo.ts",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
-    "postinstall": "prisma generate",
+    "postinstall": "node scripts/prisma.mjs generate",
     "db:migrate": "prisma migrate deploy"
   },
   "dependencies": {

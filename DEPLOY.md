@@ -22,7 +22,7 @@ use a test checkout page, and hosting is simulated.
 | `CRON_SECRET` | any long random string |
 | `AGENCY_NAME` | your agency's name (shown in emails) |
 
-3. Deploy. The build creates the database tables automatically.
+3. Deploy. The build creates the database tables automatically. Tick **Production** and **Preview** for each variable so pull-request previews work too. (Without the database variables the deploy still succeeds, and the admin page tells you what is missing.)
 
 ## 3. Try it
 1. Open `https://<your-project>.vercel.app/admin` and sign in as `admin`.
