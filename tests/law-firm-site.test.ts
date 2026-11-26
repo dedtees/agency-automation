@@ -1,5 +1,6 @@
 import { join } from "node:path";
 import { beforeEach, describe, expect, it, vi } from "vitest";
+import { GET as adminGET } from "../app/admin/site/[conceptId]/[[...path]]/route";
 import { GET, POST } from "../app/p/[token]/site/[conceptId]/[[...path]]/route";
 import { findSiteDir } from "../src/research/previews";
 import { parseProfile } from "../src/research/profile";
@@ -73,5 +74,16 @@ describe("portal site route", () => {
     const post = await POST(new Request("http://x", { method: "POST" }), { params: Promise.resolve({ token, conceptId: concept.id }) });
     expect(post.status).toBe(303);
     expect(post.headers.get("location")).toBe(`/p/${token}/site/${concept.id}/contact/thank-you/`);
+  });
+
+  it("lets the owner open a concept's website before it is approved", async () => {
+    const r = await runCaseStudy(db, caseStudyDir("central-jersey-law"));
+    const concept = r.concepts.find((c) => c.name === "Modern Counsel")!;
+    const call = (path?: string[], conceptId = concept.id) => adminGET(new Request("http://x"), { params: Promise.resolve({ conceptId, path }) });
+    const home = await call();
+    expect(home.status).toBe(200);
+    expect(await home.text()).toContain(`<base href="/admin/site/${concept.id}/">`);
+    expect((await call(["..", "package.json"])).status).toBe(404);
+    expect((await call(undefined, "nope")).status).toBe(404);
   });
 });
