@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { db } from "@/core/db";
 import { feedbackSummary } from "@/services/portal";
-import { approveConceptsAction, holdClientAction, requestConceptsAction } from "../../actions";
+import { approveConceptsAction, holdClientAction, requestConceptsAction, viewAsClientAction } from "../../actions";
 
 export default async function ClientPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
@@ -29,6 +29,9 @@ export default async function ClientPage({ params }: { params: Promise<{ id: str
       <div className="card" style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
         {["NEW", "CONCEPTS_IN_REVIEW"].includes(client.stage) && (
           <form action={requestConceptsAction.bind(null, id)}><button className="primary">{client.stage === "NEW" ? "Generate concepts" : "Regenerate concepts"}</button></form>
+        )}
+        {client.concepts.some((c) => c.status === "APPROVED") && (
+          <form action={viewAsClientAction.bind(null, id)}><button>View portal as client</button></form>
         )}
         <form action={holdClientAction.bind(null, id)}><button>Put on hold</button></form>
       </div>

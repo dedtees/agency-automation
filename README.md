@@ -10,15 +10,19 @@ integrations plug in behind the interfaces in `src/integrations/`.
 
 ## Quick start
 
+Needs Node 20+ and a Postgres database (local, or a free Supabase project).
+
 ```bash
 npm install
-cp .env.example .env
-npx prisma db push
-npm run demo        # runs the whole pipeline once in the terminal
-npm run dev         # admin at http://localhost:3000/admin
-npm run worker      # background jobs (the admin also has a "Run jobs now" button)
-npm test
+cp .env.example .env      # set DATABASE_URL / DIRECT_URL
+npm run db:migrate
+npm run demo              # runs the whole pipeline once in the terminal
+npm run dev               # admin at http://localhost:3000/admin
+npm run worker            # background jobs (on Vercel, Cron does this)
+npm test                  # uses TEST_DATABASE_URL, default postgres://localhost/agency_test
 ```
+
+To put it online, see [DEPLOY.md](DEPLOY.md) (Vercel + Supabase).
 
 ## The pipeline
 
@@ -71,12 +75,12 @@ Every stage change is checked against `src/pipeline/stages.ts` and logged as a `
 |---|---|---|
 | Concepts | `library`: 4 starter layouts with placeholder copy | AI-written copy per section, real imagery |
 | Templates | `fake`: in-app preview | Generate a WordPress block theme (theme.json + patterns), zip, store, staging preview |
-| Email | `console` (logs) | `resend` adapter included; Gmail/SMTP possible |
+| Email | `console` (logs) | `outlook` adapter (Microsoft Graph) included, `resend` too |
 | Payments | `fake` checkout page | `stripe` adapter included (Checkout + webhook signature check); needs keys |
-| Hosting | `fake` | Pick a host: managed WP API, or VPS + WP-CLI |
+| Hosting | `fake` | SiteGround: theme install over SSH + WP-CLI after the site is created in Site Tools (no public API to create sites) |
 
-## Open decisions
-- Hosting provider for built sites
-- Payment provider (Stripe adapter is ready)
-- Email sender (Resend vs. Gmail vs. SMTP) and whether outreach ever skips approval
-- Production database host (Postgres) and app host
+## Decisions so far
+- App on Vercel, database on Supabase (Postgres)
+- Email through Outlook (Microsoft 365)
+- Client sites hosted on SiteGround
+- Payment provider: later (Stripe adapter ready; fake checkout until then)

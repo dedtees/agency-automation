@@ -23,16 +23,17 @@ export async function resolvePortal(db: Db, token: string) {
 }
 
 /** Everything the portal page needs. Only APPROVED concepts are ever shown. */
-export async function loadPortal(db: Db, token: string) {
+export async function loadPortal(db: Db, token: string, opts: { preview?: boolean } = {}) {
   const access = await resolvePortal(db, token);
   const client = await db.client.findUniqueOrThrow({
     where: { id: access.clientId },
     include: {
-      concepts: { where: { status: "APPROVED" }, include: { sections: { orderBy: { position: "asc" } } }, orderBy: { createdAt: "asc" } },
+      concepts: { where: { status: "APPROVED" }, include: { sections: { orderBy: { position: "asc" } } }, orderBy: [{ createdAt: "asc" }, { id: "asc" }] },
       feedback: true,
       orders: { orderBy: { createdAt: "desc" } },
     },
   });
+  if (opts.preview) return client; // owner looking: don't log it as client activity
   if (!access.lastViewedAt) {
     await logEvent(db, client.id, "PORTAL_FIRST_VIEW");
     await transition(db, client.id, "PORTAL_ACTIVITY", { actor: "client", allowNoop: true });
@@ -73,6 +74,7 @@ export async function chooseFavorite(db: Db, token: string, conceptId: string) {
 export async function feedbackSummary(db: Db, clientId: string) {
   const concepts = await db.concept.findMany({
     where: { clientId, status: "APPROVED" },
+    orderBy: [{ createdAt: "asc" }, { id: "asc" }],
     include: { sections: { orderBy: { position: "asc" }, include: { feedback: true } }, feedback: { where: { sectionId: null } } },
   });
   return concepts.map((c) => ({

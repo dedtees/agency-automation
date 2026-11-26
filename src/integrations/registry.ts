@@ -3,6 +3,7 @@ import { getConfig } from "../core/config";
 import { libraryGenerator } from "./concepts/library";
 import type { ConceptGenerator } from "./concepts/types";
 import { consoleEmail } from "./email/console";
+import { outlookEmail } from "./email/outlook";
 import { resendEmail } from "./email/resend";
 import type { EmailProvider } from "./email/types";
 import { fakeHosting } from "./hosting/fake";
@@ -22,7 +23,7 @@ const pick = <T>(kind: string, map: Record<string, T>, id: string): T => {
 export const providers = {
   concepts: (): ConceptGenerator => pick("concepts", { library: libraryGenerator }, getConfig().providers.concepts),
   templates: (): TemplateBuilder => pick("templates", { fake: fakeTemplateBuilder }, getConfig().providers.templates),
-  email: (): EmailProvider => pick("email", { console: consoleEmail, resend: resendEmail }, getConfig().providers.email),
+  email: (): EmailProvider => pick("email", { console: consoleEmail, outlook: outlookEmail, resend: resendEmail }, getConfig().providers.email),
   payments: (id = getConfig().providers.payments): PaymentProvider => pick("payments", { fake: fakePayments, stripe: stripePayments }, id),
   hosting: (): HostingProvider => pick("hosting", { fake: fakeHosting }, getConfig().providers.hosting),
 };
