@@ -7,6 +7,8 @@ export interface ClientBrief {
   state?: string | null;
   website?: string | null;
   notes?: string | null;
+  /** Researched profile (src/research/profile.ts), when we have one. */
+  profile?: unknown;
 }
 
 export interface SectionDraft {

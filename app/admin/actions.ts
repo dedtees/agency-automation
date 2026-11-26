@@ -10,6 +10,7 @@ import { approveMessage, rejectMessage } from "@/services/outreach";
 import { transition } from "@/pipeline/engine";
 import { createPortalLink } from "@/services/portal";
 import { SAMPLE_DISCORD_CSV, SAMPLE_QUICKBOOKS_CSV } from "@/samples";
+import { caseStudyDir, runCaseStudy } from "@/services/caseStudy";
 
 export async function importFileAction(form: FormData) {
   const file = form.get("file") as File | null;
@@ -69,4 +70,12 @@ export async function loadSampleDataAction() {
 export async function viewAsClientAction(clientId: string) {
   const { token } = await createPortalLink(db, clientId);
   redirect(`/p/${token}?preview=1`);
+}
+
+/** Loads a real client from case-studies/<slug> (intake, audit, profile, concepts) and opens it.
+ * Stops at the approval gate: the owner approves the concepts before the client can see them. */
+export async function loadCaseStudyAction(slug: string) {
+  const { client } = await runCaseStudy(db, caseStudyDir(slug), { actor: "owner" });
+  revalidatePath("/admin");
+  redirect(`/admin/clients/${client.id}`);
 }

@@ -11,7 +11,8 @@ export interface ConceptForBuild {
   templateKey: string;
   palette: unknown;
   sections: { kind: string; title: string; position: number; content: unknown }[];
-  client: { businessName: string };
+  styleDirection?: string | null;
+  client: { businessName: string; profile?: unknown };
 }
 
 export interface TemplateBuilder {

@@ -23,7 +23,7 @@ export const INTAKE_SOURCES = ["manual", "quickbooks_csv", "quickbooks_api", "di
 export type IntakeSourceId = (typeof INTAKE_SOURCES)[number];
 
 export const SECTION_KINDS = [
-  "HERO", "SERVICES", "ABOUT", "TESTIMONIALS", "GALLERY", "PRICING", "FAQ", "CONTACT", "FOOTER", "CUSTOM",
+  "HERO", "SERVICES", "ABOUT", "TEAM", "RESULTS", "TESTIMONIALS", "GALLERY", "PRICING", "FAQ", "CONTACT", "FOOTER", "CUSTOM",
 ] as const;
 export type SectionKind = (typeof SECTION_KINDS)[number];
 

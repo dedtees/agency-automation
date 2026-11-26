@@ -28,6 +28,8 @@ model Client {
   /// enum: PipelineStage
   stage        String   @default("NEW")
   favoriteConceptId String?
+  /// Researched facts about the business (src/research/profile.ts). Concepts are written from this.
+  profile      Json?
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
 
@@ -38,9 +40,26 @@ model Client {
   messages  OutboundMessage[]
   orders    Order[]
   events    PipelineEvent[]
+  audits    SiteAudit[]
 
   @@index([email])
   @@index([stage])
+}
+
+/// Outside-in audit of the client's current website (src/research/audit.ts).
+model SiteAudit {
+  id          String   @id @default(cuid())
+  clientId    String
+  client      Client   @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  url         String
+  phpVersion  String?
+  wpVersion   String?
+  critical    Int      @default(0)
+  high        Int      @default(0)
+  report      Json
+  createdAt   DateTime @default(now())
+
+  @@index([clientId, createdAt])
 }
 
 /// Where a client record came from. One client can be seen in several sources
