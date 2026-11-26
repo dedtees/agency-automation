@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { db } from "@/core/db";
+import { themeSlug } from "@/integrations/templates/wp/theme";
+import { findSiteDir } from "@/research/previews";
 import { portalUrlFrom } from "@/services/caseStudy";
 import { feedbackSummary } from "@/services/portal";
 import { approveConceptsAction, holdClientAction, requestConceptsAction, viewAsClientAction } from "../../actions";
@@ -39,6 +41,18 @@ export default async function ClientPage({ params }: { params: Promise<{ id: str
         )}
         <form action={holdClientAction.bind(null, id)}><button>Put on hold</button></form>
       </div>
+
+      {client.concepts.some((c) => findSiteDir(themeSlug({ name: c.name, client }))) && (
+        <div className="card">
+          <h3>Full websites</h3>
+          <p className="muted">The real WordPress sites built for each concept, every page clickable. The contact form here goes to the thank-you page and sends nothing.</p>
+          <p style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+            {client.concepts.filter((c) => findSiteDir(themeSlug({ name: c.name, client }))).map((c) => (
+              <a key={c.id} className="btn primary" href={`/admin/site/${c.id}/`} target="_blank">Open {c.name} website</a>
+            ))}
+          </p>
+        </div>
+      )}
 
       {portalUrl && (
         <div className="card">
