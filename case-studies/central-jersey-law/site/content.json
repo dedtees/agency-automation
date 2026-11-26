@@ -1,0 +1,1400 @@
+{
+ "firm": {
+  "legalName": "Savo, Schalk, Corsini, Warner, Gillespie, O'Grodnick & Fisher, P.A.",
+  "shortName": "Savo Schalk",
+  "tagline": "Serious results in serious cases.",
+  "summary": "A full-service law firm in historic Somerville, overlooking the Somerset County Courthouse, representing businesses, government bodies and individuals throughout New Jersey, New York and Maine.",
+  "phone": "(908) 526-0707",
+  "fax": "(908) 725-8483",
+  "email": "info@centraljerseylaw.com",
+  "address": {
+   "street": "56 East Main Street, Suite 301",
+   "city": "Somerville",
+   "state": "NJ",
+   "zip": "08876",
+   "note": "3rd floor of the Hamon Building. Reserved spaces on the east side of the building, or use the parking deck in the rear.",
+   "mapsQuery": "58 East Main Street, Somerville, NJ 08876"
+  },
+  "serviceArea": "All of New Jersey, plus New York and Maine",
+  "languages": [
+   "English",
+   "Español"
+  ],
+  "about": [
+   "We regard the representation of our clients as an honor, a privilege and a steadfast responsibility. Our goal is to provide the best legal services in a convenient, caring and cost-effective manner.",
+   "We are one of the largest and most successful law firms in Somerset County, with a distinguished history and a team of diverse, capable attorneys who have earned the respect of judges, prosecutors and fellow lawyers for their integrity and technical knowledge.",
+   "Our offices are in historic Somerville, overlooking the Somerset County Courthouse."
+  ],
+  "stats": [
+   {
+    "value": "23,000+",
+    "label": "clients represented"
+   },
+   {
+    "value": "15",
+    "label": "attorneys"
+   },
+   {
+    "value": "3",
+    "label": "states: NJ, NY and ME"
+   }
+  ],
+  "payments": {
+   "label": "Make a payment",
+   "url": "https://link.clover.com/urlshortener/8tWtym",
+   "note": "Visa, Mastercard and American Express. Please include your file number and invoice number."
+  },
+  "social": [
+   {
+    "label": "Facebook",
+    "href": "http://www.facebook.com/pages/Mauro-Savo-Camerino-Grant-Schalk/153389194727894"
+   }
+  ],
+  "disclaimer": "Attorney advertising. Prior results do not guarantee a similar outcome. Contacting us through this site does not create an attorney-client relationship; please don't send confidential information until we have agreed to represent you.",
+  "hours": null
+ },
+ "practices": [
+  {
+   "slug": "land-use-zoning",
+   "name": "Land Use, Zoning & Environmental",
+   "audience": "business",
+   "icon": "landuse",
+   "image": "photos/farmland-along-mellicks-woods-road-pohatcong-township-nj-feb.jpg",
+   "blurb": "Approvals, variances, condemnation and environmental compliance, from site plans to the NJ Supreme Court.",
+   "intro": [
+    "The attorneys at Savo Schalk are experienced in the following types of land use and environmental matters:"
+   ],
+   "handles": [
+    "Local, county and state land use approvals and related litigation",
+    "Zoning and master plan issues",
+    "Interaction with governmental agencies",
+    "Developer approvals and agreements",
+    "Eminent domain",
+    "Environmental issues, licenses and permits",
+    "Wetlands issues",
+    "Underground storage tanks",
+    "Wastewater and air emissions"
+   ],
+   "sections": [],
+   "attorneys": [
+    "christopher-corsini",
+    "edward-a-halpern",
+    "alexander-g-fisher",
+    "michael-p-ogrodnick",
+    "william-b-savo",
+    "steven-k-warner"
+   ],
+   "source": [
+    "https://centraljerseylaw.com/practice_area/land-use-zoning-and-environmental-law/"
+   ]
+  },
+  {
+   "slug": "municipal-government",
+   "name": "Municipal & Government Law",
+   "audience": "business",
+   "icon": "capitol",
+   "image": "photos/nj-capitol-jpg.jpg",
+   "blurb": "Counsel to towns, boards and public bodies, including government affairs and election law.",
+   "intro": [
+    "The attorneys at Savo Schalk have been representing municipalities and governmental entities around the state for 35 years now. This wisdom and experience is invaluable m the planning and administration of these public entities. Our clients have benefited from the knowledge and respect of our fine attorneys.",
+    "Our focus in these matters has extended to:"
+   ],
+   "handles": [
+    "Regulatory issues",
+    "Environmental concerns",
+    "Land use",
+    "Affordable housing issues",
+    "Litigation of municipal matters",
+    "Tax issues",
+    "Condemnation proceedings",
+    "Cellular phone tower issues",
+    "Open space acquisition matters",
+    "Employment issues"
+   ],
+   "sections": [
+    {
+     "title": "Government affairs & election law",
+     "paragraphs": [
+      "Running for political office and participating in the democratic process require individuals to navigate a complex web of rules and regulations. Whether you are a first-time candidate or a veteran campaigner, the world of election law is constantly evolving and presenting new challenges to all who participate in the process. Whether it is preparation to run for office, addressing problems that arise during a political campaign, or handling the aftermath of the election, the attorneys at Savo Schalk stand ready to assist candidates for office in any aspect of the political process.",
+      "The attorneys at Savo Schalk are experienced in the following types of election law matters:"
+     ],
+     "bullets": [
+      "General Campaign Counsel",
+      "Election Litigation",
+      "Ballot Access",
+      "Recounts and Rechecks",
+      "Petition Challenges",
+      "Political Parties and Committees",
+      "Campaign Finance and Compliance",
+      "Government Affairs",
+      "Ethics/Conflicts of Interest",
+      "Government Contracts and Pay-to-Play",
+      "Referenda, Recalls, Charter Changes and Other Grassroots Issues"
+     ]
+    },
+    {
+     "title": "Crisis management for local government",
+     "paragraphs": [
+      "When a crisis comes calling, local governments need highly specialized advice and counsel that far exceeds the normal course of representation. That’s where our attorneys shine. With decades of experience handling complex and fast-developing predicaments and full-blown emergencies, our team brings unmatched experience and creativity to problems many other firms have never faced. We’ve consulted on crises for local government clients that have attracted statewide and nationwide attention and shepherded response plans that have seen clients emerge stronger on the other side of each instance. For both short- and medium- term quandaries that require rapid responses, detailed management, intense public-facing, and in-depth investigations, the team at Savo Schalk is unrivaled."
+     ],
+     "bullets": []
+    }
+   ],
+   "attorneys": [
+    "christopher-corsini",
+    "edward-a-halpern",
+    "alexander-g-fisher",
+    "michael-p-ogrodnick",
+    "william-b-savo",
+    "steven-k-warner",
+    "matthew-r-flynn",
+    "john-j-deluca-jr"
+   ],
+   "source": [
+    "https://centraljerseylaw.com/practice_area/municipal-and-government-law/"
+   ]
+  },
+  {
+   "slug": "business-corporate",
+   "name": "Business & Corporate",
+   "audience": "business",
+   "icon": "briefcase",
+   "image": "photos/90-nassau-street-princeton-new-jersey-2024-043-jpg.jpg",
+   "blurb": "Forming, buying and selling businesses, and resolving shareholder and partner disputes.",
+   "intro": [
+    "At Savo Schalk, we assist business owners and management with all their legal needs. Our services cover a wide range, from transactional work to complex litigation, from formation of a business to preparing shareholder agreements, mergers and acquisitions and partnership transactions.",
+    "We assist businesses and provide services related to business contracts, including preparing and negotiating employment agreements, confidentiality agreements, intellectual property agreements, vendor agreements, sales contracts and manufacturing agreements.",
+    "We help when a business turns to a shareholder buyout, retirement, and employee incentive plan or there is a shareholder dispute. If there are tax or environmental issues, we have experience and expertise to assist you.",
+    "There are many complex and repeated legal challenges to the successful operation of any business, large or small. The only way to navigate through these challenges is to have a skilled business attorney that you can trust and rely upon. Our attorneys at Savo Schalk are here to serve you."
+   ],
+   "handles": [],
+   "sections": [
+    {
+     "title": "Shareholder & partner disputes",
+     "paragraphs": [
+      "One of the most crippling events that can happen to a company is when a dispute arises between shareholders or partners to the business. If the matter dissolves into litigation, the costs to the company can be enormous and the ability of the company to function as a business can be suffocated. It is important that a company has competent and effective legal counsel to limit the damage to the business should a shareholder or partner dispute arise.",
+      "At Savo Schalk, we have attorneys experienced in quickly resolving shareholder and partner disputes. We are also experienced in handling the litigation aspect of these matters should that become necessary. We are well versed in the law in this area and understand how to effectively deal with the courts in these matters should the need arise."
+     ],
+     "bullets": []
+    },
+    {
+     "title": "Minority shareholder actions",
+     "paragraphs": [
+      "Minority shareholder litigation can be some of the most contentious litigation in our courts in New Jersey. Oftentimes, the parties to these matters include family members or formerly close friends. You may not know this, but in New Jersey, if you are a minority shareholder in a small company, one having 25 or less shareholders, you have the ability to obtain relief in the New Jersey courts if those in control of your company have acted fraudulently, illegally, mismanaged the company, abused their authority, or have acted oppressively or unfairly toward you or any other minority shareholders in the company.",
+      "Once a court gets involved in the case, a Chancery Division judge has the ability to order relief to benefit minority shareholders. This relief may include appointing a custodian, appointing a provision director, ordering the sale of the corporation’s stock at a fair price to you or even entering a judgment dissolved the corporation."
+     ],
+     "bullets": []
+    }
+   ],
+   "attorneys": [
+    "edward-a-halpern",
+    "michael-p-ogrodnick",
+    "ellen-m-gillespie",
+    "william-b-savo",
+    "charles-z-schalk"
+   ],
+   "source": [
+    "https://centraljerseylaw.com/practice_area/business-and-corporate/"
+   ]
+  },
+  {
+   "slug": "commercial-real-estate",
+   "name": "Commercial Real Estate",
+   "audience": "business",
+   "icon": "building",
+   "image": "photos/first-reformed-church-and-somerset-county-courthouse-somervi.jpg",
+   "blurb": "Transactions, leasing, landlord/tenant matters and property tax appeals.",
+   "intro": [
+    "The purchase of commercial real estate is complex and a great investment of time and money. We represent purchasers and sellers of commercial real estate throughout the State of New Jersey. This includes the purchase of tracts of land, apartment buildings, retail properties and industrial properties. We represent mortgage companies and institutional lenders on commercial closings and financing transactions. We represent borrowers on commercial loans and construction financing. We represent developers in the purchase and sale of real estate.",
+    "The attorneys at Savo Schalk bring a wealth of experience and wisdom to this specialized area of law. For all your commercial real estate needs, please call our office today."
+   ],
+   "handles": [],
+   "sections": [],
+   "attorneys": [
+    "john-f-bracaglia-jr",
+    "christopher-corsini",
+    "edward-a-halpern",
+    "william-b-savo"
+   ],
+   "source": [
+    "https://centraljerseylaw.com/practice_area/commercial-real-estate/"
+   ]
+  },
+  {
+   "slug": "litigation",
+   "name": "Litigation & Dispute Resolution",
+   "audience": "business",
+   "icon": "gavel",
+   "image": "photos/courtgavel-jpg.jpg",
+   "blurb": "Trial-tested litigators for commercial, construction, products liability and insurance defense matters, plus mediation.",
+   "intro": [
+    "When parties no longer can work out their differences between themselves, they turn to the courts of New Jersey to help resolve their problems. This is the point where lawsuits are filed and the disputes are formalized – this is litigation.",
+    "At Savo Schalk, we have a team of experienced litigators, attorneys that devote their practices to representing parties before the varied courts of New Jersey. These attorneys call upon their collective experiences to provide sensible solutions and effective advocacy from simple to complex disputes.",
+    "If your matter requires a trial by judge or jury, our attorneys are effective and skilled communicators of your position, working diligently to obtain the best possible result for you.",
+    "We are admitted to practice throughout all the state and Federal courts of New Jersey as well as the courts of New York, Pennsylvania, Florida, Connecticut, Maryland, New Hampshire, Maine and the District of Columbia."
+   ],
+   "handles": [],
+   "sections": [
+    {
+     "title": "Construction litigation",
+     "paragraphs": [
+      "The purchase of a home or property is generally the largest financial transaction of your life. When things go wrong and you experience major construction defects with your home or property, you need the experience and expertise of an attorney familiar with these specific legal issues as well as access to experts in the construction industry.",
+      "We have experience in litigation involving claims related to roofs, windows, water penetration, insulation, mold, siding, structural failures, mechanical systems, sewer systems and sea walls."
+     ],
+     "bullets": []
+    },
+    {
+     "title": "Products liability defense",
+     "paragraphs": [
+      "The attorneys at Savo Schalk are experienced in the defense of products liability claims. We have substantial experience in defending various product defect claims brought against businesses including manufacturers and distributors. We are skilled in developing defenses for all product cases including those involving complex technical products and have extensive experience in the defense of mass tort claims such as asbestos."
+     ],
+     "bullets": []
+    },
+    {
+     "title": "Insurance defense",
+     "paragraphs": [
+      "The attorneys at Savo Schalk provide wide-ranging legal services to insurance companies for all their defense needs in the areas of automobile accident, environmental and toxic torts.",
+      "We are prepared to handle all types of insurance defense matters including:"
+     ],
+     "bullets": [
+      "Arbitration",
+      "Automobile accident",
+      "Business and commercial coverage",
+      "Employment practices",
+      "Environmental claims",
+      "General liability",
+      "Homeowner’s insurance",
+      "Insurance fraud",
+      "PIP",
+      "Personal injury and wrongful death",
+      "Premises liability",
+      "Products liability",
+      "Professional liability",
+      "Subrogation",
+      "Workers compensation"
+     ]
+    },
+    {
+     "title": "Court-approved mediation",
+     "paragraphs": [
+      "Mediation is a dispute resolution process in which an impartial third party, the mediator, facilitates negotiations among the parties to help them reach a mutually acceptable settlement. The parties and their attorneys, with the assistance of the mediator, work toward a solution with which they are comfortable. The purpose of mediation is not to decide who is right or wrong, but rather its goal is to give the parties the opportunity to express feelings, clear up misunderstandings, determine interests or concerns, find areas of agreement, and ultimately, incorporate these areas into solutions.",
+      "The New Jersey Supreme Court Committee on Complementary Dispute Resolution developed the mediation program for use in Civil, General Equity and Probate cases. Charles Z. Schalk, Esq. of Savo Schalk is an experienced mediator who appears on the State of New Jersey roster of qualified and court-approved mediators. Mr. Schalk mediates civil litigation matters including employment litigation, construction litigation, personal injury and complex business disputes."
+     ],
+     "bullets": []
+    }
+   ],
+   "attorneys": [
+    "charles-z-schalk",
+    "michael-p-ogrodnick",
+    "christopher-corsini",
+    "john-f-bracaglia-jr",
+    "steven-k-warner"
+   ],
+   "source": [
+    "https://centraljerseylaw.com/practice_area/litigation/"
+   ]
+  },
+  {
+   "slug": "banking-bankruptcy",
+   "name": "Banking, Bankruptcy & Creditors’ Rights",
+   "audience": "business",
+   "icon": "bank",
+   "image": "photos/old-somerset-county-courthouse-somerville-nj-july-2026-jpg.jpg",
+   "blurb": "Chapter 7, 11 and 13, collections, workouts and creditor representation.",
+   "intro": [
+    "Our firm represents national, regional and local banks in transactions and litigation throughout New Jersey. We are experienced in all types of financial transactions with specific experience in:",
+    "Our attorneys are experienced in the preparation, negotiation and closing of all types of credit matters."
+   ],
+   "handles": [
+    "Corporate Finance",
+    "Secured Lending",
+    "Lease Finance",
+    "Commercial Real Estate Finance"
+   ],
+   "sections": [
+    {
+     "title": "Chapter 7, 11 & 13 bankruptcy",
+     "paragraphs": [
+      "Businesses suffer economic difficulties from a variety of causes. Loss of key customers, weather-related issues and increased competition are just some of the many reasons. Oftentimes, this leads to defaults in lease payments or other secured obligations, tax arrearages and difficulties with suppliers. Although income from operations continues, the demands upon that income makes the continuation of the business an onerous task.",
+      "Chapter 11 of the Bankruptcy Code offers relief in such situations. Claims of creditors get held in abeyance to give the business an opportunity to develop a plan to satisfy them. Oftentimes, the terms for repayment can be significantly extended, or creditors can be forced to accept a much reduced amount, often pennies on the dollar."
+     ],
+     "bullets": []
+    },
+    {
+     "title": "Creditors’ rights",
+     "paragraphs": [
+      "Individuals and business entities file bankruptcy for a variety of reasons. Upon receipt of a notice from the Bankruptcy Court, creditors become frustrated and confused about what they can and cannot do and how do they protect their interest.",
+      "Creditors have rights and there are a variety of options open to protect those rights. Secured creditors may be entitled to interim payments. They may be entitled to petition the court to allow them to repossess their collateral. In instances where an indication of fraud may appear, creditors may object to a bankruptcy discharge."
+     ],
+     "bullets": []
+    },
+    {
+     "title": "Collections",
+     "paragraphs": [
+      "It is frustrating and financially painful to work hard for another business or individual only to not be paid for your efforts. At Savo Schalk, we have the capability to effectively collect those unpaid receivables in a timely and efficient manner.",
+      "There are many strategies to recovering monies that are owed to you. Some require delicate touch when there are ongoing business relationships that require only some mild stimuli from an attorney while others will only get the point from strong and forceful litigation, followed through to judgment and levying available assets."
+     ],
+     "bullets": []
+    },
+    {
+     "title": "Business debt workouts",
+     "paragraphs": [
+      "It is not uncommon for businesses to experience cash flow problems. For various reasons, a Chapter 11 business reorganization may not be advisable and direct negotiations with the various lenders and creditors may be the preferable procedure.",
+      "The attorneys at Savo Schalk have experience in business debt workouts. We will negotiate on your behalf directly with your creditors or suppliers as may be necessary. We will defend any lawsuits which may have been instituted against you. We understand your cash flow limitations and will work with you to make appropriate proposals which would satisfy the needs of your creditors and permit you to keep your business operational."
+     ],
+     "bullets": []
+    }
+   ],
+   "attorneys": [
+    "william-b-savo",
+    "john-f-bracaglia-jr",
+    "christopher-corsini",
+    "michael-p-ogrodnick",
+    "charles-z-schalk"
+   ],
+   "source": [
+    "https://centraljerseylaw.com/practice_area/banking-and-financial-services/"
+   ]
+  },
+  {
+   "slug": "employers",
+   "name": "Employers & Workers’ Compensation Defense",
+   "audience": "business",
+   "icon": "people",
+   "image": "photos/conference-room-in-the-berlaymont-building-2-jpg.jpg",
+   "blurb": "Advice and defense for employers, including workers' compensation.",
+   "intro": [
+    "At Savo Schalk, we provide strategic counsel and robust defense for employers navigating the complex and constantly evolving landscape of workplace regulations. Our attorneys focus on minimizing liability and fostering compliant, productive environments by advising management before disputes arise and providing experienced representation when legal claims occur.",
+    "We assist employers with a wide range of management-side employment law matters, including:"
+   ],
+   "handles": [
+    "Wrongful Discharge",
+    "Sexual Harassment",
+    "Discrimination – Age, Race, Sex, Disability, Pregnancy, Sexual Orientation, Marital Status",
+    "Severance Negotiations",
+    "Whistleblowing Claims – CEPA",
+    "Retaliation Claims",
+    "Leaves of Absence – Family Leave, Medical Leave, Disability Leave",
+    "Executive Negotiations",
+    "Minority Shareholder Actions",
+    "Restrictive Covenants and Non-Compete Agreements",
+    "Reasonable Accommodation",
+    "Failure to Hire / Failure to Promote",
+    "Wage and Hour Disputes",
+    "Employee Benefits",
+    "ERISA Claims",
+    "Workers Compensation"
+   ],
+   "sections": [
+    {
+     "title": "Workers’ compensation defense",
+     "paragraphs": [
+      "The attorneys at Savo Schalk are experienced in the defense of workers compensation claims. We have substantial experience in defending employers and their insurance companies on claims brought against them by employees injured on the job. We are skilled in developing defenses for all types of injuries including those involving complex medical issues."
+     ],
+     "bullets": []
+    }
+   ],
+   "attorneys": [
+    "christopher-corsini"
+   ],
+   "source": [
+    "https://centraljerseylaw.com/practice_area/representation-of-employers/"
+   ]
+  },
+  {
+   "slug": "personal-injury",
+   "name": "Personal Injury & Medical Malpractice",
+   "audience": "individual",
+   "icon": "shield",
+   "image": "photos/raritan-river-nj-south-branch-and-north-branch-confluence-jp.jpg",
+   "blurb": "Accidents, medical malpractice, workers' compensation and Social Security disability appeals.",
+   "intro": [
+    "New Jersey is the most densely populated state in the United States. It should be no surprise then that the people living, working and traveling through New Jersey are frequently hurting each other.",
+    "When you are hurt, there can be medical bills to be paid, income that can be lost, pain and suffering, and permanent damage to your body. When this happens, you need someone who can help you through the process, and see to it that you receive fair compensation for the injuries and damages that you incur.",
+    "It could be an automobile accident, a construction accident, a workplace injury, a motorcycle accident, a nursing home injury, a slip and fall, an unsafe product or a wrongful death, just to name a few.",
+    "If this should happen to you or one of your loved ones, you should speak to one of our professional and reputable attorneys at Savo Schalk. We would be happy to assist you with your legal needs."
+   ],
+   "handles": [],
+   "sections": [
+    {
+     "title": "Medical malpractice",
+     "paragraphs": [
+      "Almost all medical providers are incredibly bright, competent and capable individuals in their chosen profession. However, occasionally and rarely, a medical professional breaches his or her duty of care, causing injury and damage to their patient. In those times when someone commits medical malpractice, you need someone skilled and experienced enough in this specialty in understanding the difference between mere normal consequences of a medical event and identifying a true act of negligence. This comes not from merely reading a book but from years of experience in the field. At Savo Schalk, we have the knowledge, experience and resources to help you deal effectively with these issues, which often have profound and long-lasting effects in our lives."
+     ],
+     "bullets": []
+    },
+    {
+     "title": "Workers’ compensation",
+     "paragraphs": [
+      "Just like that the most unexpected thing happens -you suffer a traumatic injury at work. Or it happens more slowly and you suffer a repetitive motion injury. Or it happens even more slowly and you suffer a disease from occupational exposure to a toxic substance from a long time ago. No matter how it happens: the issue is that you need an experienced workers compensation attorney to handle your matter.",
+      "Workers compensation claims are unique matters in New Jersey. They have their own separate court from all the rest of the cases in the court system. They have full-time judges devoted to hearing nothing but workers compensation cases. And the formulas for determining recovery are unique and require a specialized knowledge and experience to maximize recovery for the injured worker."
+     ],
+     "bullets": []
+    },
+    {
+     "title": "Social Security disability appeals",
+     "paragraphs": [
+      "It is immeasurably distressing and frustrating to be so physically or mentally disabled to the point that you can no longer work at your job. When you file for disability for Social Security and the Federal government rejects your application claiming that you are allegedly not disabled or do not qualify for disability benefits, your misery is only amplified. If you find yourself in this situation, you should seek the professional advice of a qualified attorney with experience in handling Social Security disability appeals.",
+      "At Savo Schalk, we have attorneys experienced in the handling of every aspect of a Social Security disability appeal, from the initial filing to a full hearing before a judge, to any and all appeals thereafter. You worked a lifetime to attain your Social Security disability benefits. Do not give up if at first Social Security rejects your application. Sometimes, a little effort and a little professional assistance are enough for you to obtain these valuable benefits."
+     ],
+     "bullets": []
+    }
+   ],
+   "attorneys": [
+    "charles-z-schalk",
+    "christopher-corsini"
+   ],
+   "source": [
+    "https://centraljerseylaw.com/practice_area/accident-and-personal-injury/"
+   ]
+  },
+  {
+   "slug": "family-law",
+   "name": "Family & Matrimonial Law",
+   "audience": "individual",
+   "icon": "family",
+   "image": "photos/a-mixed-race-family-walking-in-a-park-with-european-flags-p0.jpg",
+   "blurb": "Divorce, custody and support, handled with discretion.",
+   "intro": [
+    "Going through a divorce can be one of a person’s most difficult life experiences. It is during these difficult times that you need an experienced, competent and effective family law attorney to help guide you through the myriad of legal issues that will affect you and your family at this pivotal time in your life. You need someone that will help you make responsible decisions that affect you and your loved ones for many years to come emotionally, physically and financially.",
+    "At Savo Schalk, we have the legal expertise to help you begin a new chapter in your life and to help protect your rights. Our services in the Family Law field include the following:"
+   ],
+   "handles": [
+    "Divorce",
+    "Equitable Distribution of Assets and Liabilities",
+    "Alimony",
+    "Child Support",
+    "Custody and Visitation Schedules",
+    "Domestic Violence",
+    "Separation Agreements",
+    "Prenuptial Agreements",
+    "Post-judgment Enforcement",
+    "Palimony Claims",
+    "Grandparents Rights",
+    "Adoption",
+    "Gay and Lesbian Rights",
+    "Domestic Partnership Agreements"
+   ],
+   "sections": [],
+   "attorneys": [],
+   "source": [
+    "https://centraljerseylaw.com/practice_area/matrimonial-and-family-law/"
+   ]
+  },
+  {
+   "slug": "wills-trusts-estates",
+   "name": "Wills, Trusts & Estates",
+   "audience": "individual",
+   "icon": "document",
+   "image": "photos/john-m-fleming-home-place-jpg.jpg",
+   "blurb": "Planning and administration for families and business owners.",
+   "intro": [
+    "The law of Wills, Trusts and Estates is a complex and constantly evolving area of law. Both the State and Federal government are frequently changing the laws and affecting the way we deal with wills, trusts and estates. Critical laws are changing day by day in this field.",
+    "The accumulation of a lifetime’s assets is one that requires experienced and professional legal guidance to maximize preservation of those assets for you and your heirs. At Savo Schalk, we have the knowledge and resources to creatively preserve and protect your wealth.",
+    "In addition, when the time comes, we work closely with our clients to effectively and timely administer the estates of loved ones. There are complicated tasks to be accomplished and few people have experience dealing with these issues. We help with the difficult and important financial and legal decisions that must be made at a time when individuals are most stressed.",
+    "Also, there are at times disagreements among loved ones that require legal guidance and at times, the involvement of the courts to resolve. Our legal team is experienced in both the amicable and not so amicable resolutions of these issues."
+   ],
+   "handles": [],
+   "sections": [],
+   "attorneys": [
+    "michael-p-ogrodnick",
+    "ellen-m-gillespie",
+    "william-b-savo"
+   ],
+   "source": [
+    "https://centraljerseylaw.com/practice_area/wills-trusts-and-estates/"
+   ]
+  },
+  {
+   "slug": "criminal-defense",
+   "name": "Criminal Defense & Municipal Court",
+   "audience": "individual",
+   "icon": "scales",
+   "image": "photos/somerset-county-courthouse-somerville-nj-front-view-jpg.jpg",
+   "blurb": "Criminal defense, DWI, traffic and drug charges.",
+   "intro": [
+    "There are not many things more serious in life than being charged with a crime. More than just money, a criminal conviction represents, among other things, the potential to being incarcerated, facing severe penalties and loss of driving privileges. In those critical times, it is imperative that you find an experienced and capable defense attorney that you are comfortable with personally and financially. Savo Schalk can serve you in those times.",
+    "Our attorneys provide a professional and intelligent response to every type of criminal charge. We are committed to providing an effective defense and will work diligently to help achieve the best possible resolution of the situation. From investigation to trial, we are here to serve your needs.",
+    "We are prepared to defend you on any crime in any State or Federal court of the State of New Jersey including:"
+   ],
+   "handles": [
+    "Arson",
+    "Assault",
+    "Computer Crimes",
+    "Domestic Violence",
+    "Drug Charges",
+    "Drunk Driving and Breathalyzer Refusal",
+    "Expungements",
+    "Federal Offenses",
+    "Fraud",
+    "Harassment",
+    "Juvenile Offenses",
+    "Murder and Homicide",
+    "Resisting Arrest",
+    "Sex Offenses",
+    "Shoplifting",
+    "Speeding Charges",
+    "Suspended License / Driving Without Insurance",
+    "Theft",
+    "Traffic Violations",
+    "Weapons Charges",
+    "White Collar Crimes"
+   ],
+   "sections": [
+    {
+     "title": "Municipal court: DWI, traffic & drug charges",
+     "paragraphs": [
+      "The world of municipal court can be confusing and frustrating. If you find yourself in municipal court, it is because you received either a traffic summons or a criminal complaint against you. While the court may look less formal and the atmosphere less organized than the Superior Court at the county level, the consequences to you are no less serious. Offenses in municipal court often carry terms of incarceration, probation, high fines, points on your license and loss of driving privileges.",
+      "When charged with these types of matters, you need the assistance of competent, professional and friendly legal counsel who have experience interacting with municipal prosecutors, local and state police and municipal judges. The attorneys at Savo Schalk have that experience and would be happy to discuss with you how we can assist you in these matters."
+     ],
+     "bullets": [
+      "Drunk Driving Offenses -DUI, DWI, Breathalyzer Refusal",
+      "All Traffic Violations",
+      "Drug Offenses -Possession Marijuana, Paraphernalia, Operating Vehicle with CDS Disorderly Persons Offenses",
+      "Assault",
+      "Domestic Disputes / Domestic Violence",
+      "Juvenile Offenses",
+      "Resisting Arrest",
+      "Shoplifting",
+      "Speeding Charges",
+      "Suspended License",
+      "Driving Without Insurance",
+      "Theft",
+      "Bad Checks",
+      "Sexual Offenses",
+      "Ordinance Violations"
+     ]
+    }
+   ],
+   "attorneys": [
+    "alexander-g-fisher",
+    "michael-p-ogrodnick",
+    "charles-z-schalk"
+   ],
+   "source": [
+    "https://centraljerseylaw.com/practice_area/criminal-defense/"
+   ]
+  },
+  {
+   "slug": "employment-education-civil-rights",
+   "name": "Employment, Education & Civil Rights",
+   "audience": "individual",
+   "icon": "people",
+   "image": "photos/business-people-discussing-in-the-cafe-44876336845-jpg.jpg",
+   "blurb": "Employees' rights, student discipline and expulsion, and civil rights claims.",
+   "intro": [
+    "Workplace problems can affect your income, career, and peace of mind. At Savo Schalk, our employment-law practice represents employees in New Jersey who need informed legal guidance about a workplace dispute, a career transition, or potential violations of their rights. We do not represent employers in employment matters.",
+    "Employment claims often involve detailed facts, deadlines, and overlapping state and federal laws. Whether you are still employed, have received a severance proposal, or have already been terminated, it is important to understand your options before taking the next step. Our attorneys provide confidential, individualized guidance designed around the circumstances of each matter."
+   ],
+   "handles": [
+    "Discrimination and sexual harassment",
+    "Retaliation and whistleblower (CEPA) claims",
+    "Wrongful termination",
+    "Severance and executive negotiations",
+    "Wage and hour disputes",
+    "Leave and reasonable accommodation"
+   ],
+   "sections": [
+    {
+     "title": "Student discipline & education law",
+     "paragraphs": [
+      "We all have constitutional rights to education that requires that these significant property interests not be taken away arbitrarily or without due process of law. For either the parent or their child, when those important property interests are threatened, you need protection. Our attorneys at Savo Schalk are here to help address your needs.",
+      "There are few law firms that specialize in this type of work and we have been publicly recognized for this work, most significantly in the $2 million verdict we obtained on behalf of a dental student against UMDNJ. This is the largest verdict ever obtained on behalf of a student in the United States. In addition, through our efforts, we have been successful in getting students re-admitted into various professional schools in multiple states including medical and graduate schools following dismissal, and re-admission into medical residency programs after dismissal. In one instance, we had more than $400,000 in student loans for a student extinguished."
+     ],
+     "bullets": []
+    },
+    {
+     "title": "Civil rights",
+     "paragraphs": [
+      "We represent clients in matters where their civil and Constitutional rights have been violated. As a citizen of the United States and New Jersey, you have civil rights that require equal and fair treatment under the law. We help people and defend victims. This can occur in a variety of circumstances, including during encounters with law enforcement, wrongful arrest, and invasions of privacy. When there is a legitimate violation of a person’s civil rights resulting in damages, we are here to vindicate those rights and secure compensation for those losses. We are experienced in handling these difficult and emotional claims. If you believe that your civil rights have been violated, we recommend that you call Savo Schalk for a free initial consultation."
+     ],
+     "bullets": []
+    }
+   ],
+   "attorneys": [
+    "charles-z-schalk"
+   ],
+   "source": [
+    "https://centraljerseylaw.com/practice_area/employment-law-2/"
+   ]
+  },
+  {
+   "slug": "residential-real-estate-debt",
+   "name": "Home, Debt & Residential Real Estate",
+   "audience": "individual",
+   "icon": "home",
+   "image": "photos/2018-05-29-19-13-00-view-east-along-new-jersey-state-route-2.jpg",
+   "blurb": "Residential closings, mortgage and loan modifications, and defense of collection lawsuits.",
+   "intro": [
+    "The purchase and sale of a home, vacation home or investment property often is the largest financial transaction in an individual’s lifetime. This is not something that should be taken lightly -the stakes are high and consequences long if problems should arise. In terms of the entire transaction, the legal costs are relatively small and given the total picture, could be the best-spent money in the entire transaction.",
+    "It is important to have someone on your side who is analyzing the transaction for your best interest, rather than in a commission or other interest that might not necessarily be your own.",
+    "Our attorneys and competent support staff are experienced and trained to manage all phases of residential real estate transactions -they are capable of handling the good and bad that comes with every transaction, the ups, downs and road bumps experienced in nearly every case. You want a legal team that can coolly and calmly deal with these sometimes-emotional issues in a firm and effective way."
+   ],
+   "handles": [],
+   "sections": [
+    {
+     "title": "Mortgage & loan modification",
+     "paragraphs": [
+      "For a variety of reasons, one may find themselves behind in making their mortgage or credit card payments. Attempts to negotiate directly with the creditors may prove unsuccessful and oftentimes result in frustration and a loss of self-esteem. Collection and foreclosure lawsuits may have been commenced and the loss of one’s home may appear imminent.",
+      "The attorneys at Savo Schalk are experienced and qualified to represent those who find themselves in such a situation. Remedies may include relief through the Superior Court mortgage modification process or negotiating directly with creditors or their attorneys. The experienced attorneys at our firm are well-versed in all aspects of the mortgage modification and debt resolution process, and have successfully assisted individuals through these trying situations."
+     ],
+     "bullets": []
+    },
+    {
+     "title": "Individual bankruptcy",
+     "paragraphs": [
+      "Oftentimes, individuals find themselves in situations where they are unable to pay their credit cards, car loans and/or mortgages. Most frequently, this results from events beyond their control, such as illness, loss of employment, divorce or separation. The constant demands of creditors cause unneeded stress and take away from day-to-day family well-being.",
+      "Chapters 7 and 13 of the Bankruptcy Code offer relief to individuals who find themselves in such an unfortunate situation. Credit card bills, medical bills and other similar debts can be discharged in their totality. Payment plans which cure arrears on mortgages can be confirmed and made binding."
+     ],
+     "bullets": []
+    }
+   ],
+   "attorneys": [
+    "john-f-bracaglia-jr",
+    "christopher-corsini",
+    "ellen-m-gillespie"
+   ],
+   "source": [
+    "https://centraljerseylaw.com/practice_area/residential-real-estate/"
+   ]
+  }
+ ],
+ "attorneys": [
+  {
+   "slug": "charles-z-schalk",
+   "name": "Charles Z. Schalk",
+   "role": "Managing Partner",
+   "email": "schalk@centraljerseylaw.com",
+   "bio": [
+    "Charles Z. Schalk is a trial attorney and managing partner with Savo Schalk where he heads up an active litigation practice. The New Jersey Supreme Court has designated Mr. Schalk as a Certified Civil Trial Attorney, a distinction achieved by only approximately 2% of all practicing attorneys in the State of New Jersey.",
+    "Mr. Schalk has obtained multi-million dollar verdicts and settlements on behalf of his clients. After a three-week trial, Mr. Schalk obtained a widely-publicized $2.025 million verdict on behalf of a dental student against UMDNJ in which it was alleged that the student was expelled in violation of his 14th Amendment rights and denied procedural and substantive due process. Nationally, this became the largest student expulsion verdict ever eclipsing the Zwick v. University of Michigan verdict of $1.72 million in 2005. This judgment was fully collected two months after the verdict.",
+    "Mr. Schalk obtained a more than three million dollar verdict against a large corporation for an employee alleging violation of the Conscientious Employee Protection Act and settled a minority shareholder and employment matter for close to three million dollars. Mr. Schalk received a $2.5 million personal injury arbitration award for a client in a complex and usual matter in Mercer County. His verdicts have been published by the New Jersey Law Journal as the top employment and civil verdicts in the State of New Jersey several years running.",
+    "In June 2019, after four years of litigation and a trial that spanned eleven trial days from February to May, Essex County Chancery Division Judge Jodi Lee Alper issued a fully favorable verdict in favor of Mr. Schalk’s clients, the Board of Trustees of the First Presbyterian Church in Newark. In this highly contentious and unique litigation involving several centuries of church history, a Royal Charter from King George II in 1753, and a $20 million property adjacent to the Prudential Center in Newark, our clients and the congregation they serve were able to fend off outside Presbyterian entities interested in gaining control of this valuable property located in the heart of the business district in Newark. The matter received the attention of the New Jersey Law Journal: https://www.law.com/njlawjournal/2019/07/12/judge-rejects-challenge-to-autonomy-of-17th-century-church/ . On December 9, 2020, the New Jersey Appellate Division fully affirmed this decision in a comprehensive 26 page opinion.",
+    "Mr. Schalk was a featured speaker at the National Employment Lawyers Association Annual Conference presented by NJICLE during a full-day event entitled, “How to Win a Million Dollar Verdict and Keep It.” In addition, Mr. Schalk was a featured speaker at the annual national convention of the National Employment Lawyers Association in San Diego, California on the topic of “Top Ten Tips to Maximize Economic & Compensatory Damages in Employment Cases.”"
+   ],
+   "facts": {},
+   "photo": "people/charles-z-schalk.jpg",
+   "practices": [
+    "business-corporate",
+    "litigation",
+    "banking-bankruptcy",
+    "personal-injury",
+    "criminal-defense",
+    "employment-education-civil-rights"
+   ]
+  },
+  {
+   "slug": "christopher-corsini",
+   "name": "Christopher Corsini",
+   "role": "Partner",
+   "email": "corsini@centraljerseylaw.com",
+   "bio": [
+    "Chris Corsini is a dedicated and effective attorney with deep roots in Central Jersey and experience in government at the federal, state, county, and local level. Mr. Corsini specializes in the representation of government entities and is recognized as one of the foremost municipal general counsels in New Jersey. He is presently the municipal attorney in the Township of Bridgewater, Borough of Middlesex, Borough of Flemington, and Township of Readington. He assists in the management of Savo Schalk’s diverse municipal law practice and consults daily on a wide variety of issues affecting local governments throughout the state, including land use, procurement, law enforcement and emergency services, human resource management, Title 58 liability actions, open space acquisitions, shared services, matters involving the Open Public Meetings Act (OPMA) and Open Public Records Act (OPRA), local government ethics, and many other areas of local municipal practice.",
+    "Mr. Corsini has developed a specialty in local government crisis management, guiding municipalities through difficult short- and medium- term adversity where quick, decisive action is required. He has consulted on crises for local government clients that have attracted statewide and nationwide attention and shepherded response plans that have seen clients emerge stronger on the other side of each instance.",
+    "In addition to his municipal and government law practice, Mr. Corsini also maintains election law, campaign finance and government affairs practices, representing candidates, individuals, businesses, and political action groups in a wide variety of political and government matters. He also consults on litigation files for Joint Insurance Funds (JIFs) throughout New Jersey.",
+    "Prior to joining our firm, Mr. Corsini served as Deputy County Counsel for Somerset County from 2010 until 2013. In that capacity, he handled a wide variety of transactions and litigation matters on behalf of the taxpayers of Somerset County. In addition to his service to Somerset County, Mr. Corsini has represented private clients on a diverse array of matters. Mr. Corsini clerked for the Hon. Yolanda Ciccone, Assignment Judge of the Superior Court in Somerset County. He also served on the leadership staff of Assembly Minority Leader Alex DeCroce, assisting the assemblyman in both legislative and constituent matters. He has served a variety of civic organizations, including the Somerset County Library Commission, Court-Appointed Special Advocated for Children – Somerset, Hunterdon, and Warren Counties (CASA-SHAW), and as a member of the District XIII Fee Arbitration Committee. He served as the Republican State Committeeman for the County of Somerset from 2021 through 2025."
+   ],
+   "facts": {
+    "appointments": [
+     "Borough Attorney, Borough of Middlesex (2018-Present)",
+     "Township Attorney, Township of Bridgewater (2019-Present; Deputy 2013-2019)",
+     "Borough Attorney, Borough of Flemington (2023-Present)",
+     "Township Attorney, Township of Readington (2024-Present)"
+    ],
+    "education": [
+     "J.D., Seton Hall University School of Law, 2009",
+     "B.A., Franklin & Marshall College, 2004"
+    ],
+    "admissions": [
+     "New Jersey, 2009",
+     "District of New Jersey, 2011",
+     "New York, 2013"
+    ]
+   },
+   "photo": "people/christopher-corsini.jpg",
+   "practices": [
+    "municipal-government",
+    "litigation",
+    "land-use-zoning",
+    "commercial-real-estate",
+    "banking-bankruptcy",
+    "employers",
+    "personal-injury",
+    "residential-real-estate-debt"
+   ]
+  },
+  {
+   "slug": "steven-k-warner",
+   "name": "Steven K. Warner",
+   "role": "Partner",
+   "email": "warner@centraljerseylaw.com",
+   "bio": [
+    "Mr. Warner has a state-wide reputation as an expert in all facets of municipal zoning and land use law, including redevelopment and affordable housing law, and he represents both municipal and private clients. He currently represents several municipalities and municipal zoning and planning boards throughout Central and Northern New Jersey.",
+    "Mr. Warner has been named to the New Jersey Super Lawyers list in the area of zoning and land use law every year since 2011. He recently received the Professional Lawyer of the Year Award for Somerset County.",
+    "Mr. Warner recently served as the Chairman of the Land Use Law Section of the New Jersey State Bar Association, and he is a Member of its Judicial Administration, Equity Jurisprudence, and Business and Commercial Litigation Committees. Mr. Warner is also a Past President of the Somerset County Bar Association, and he is a former Trustee of the Somerset County Bar Foundation. He is also an Associate Counsel of the New Jersey Planning Officials (NJPO) organization and a frequent lecturer for the NJPO. Mr. Warner also has served as a Somerset County delegate to the New Jersey State Bar Association General Council and previously served on an annual basis as a Judge for the Vincent J. Appruzzese Mock Trial Competition. He is a former member of both the District XIII Ethics and Fee Arbitration Committees.",
+    "Mr. Warner is a frequent lecturer in numerous areas of zoning and land use law. He has authored articles published in the New Jersey Lawyer Magazine and New Jersey Law Journal, among other publications. Mr. Warner also is an Instructor for the Center for Government Services at Rutgers, The State University of New Jersey. He is also a Diplomat in New Jersey Local Government Law, having received his certification for same from Rutgers University.",
+    "Mr. Warner is a graduate of Clark University (B.A. cum laude 1985) and Boston University School of Law (J.D. 1988), where he was a semi-finalist and received the Best Brief Award at a National Moot Court competition.",
+    "Mr. Warner served as a Councilman for the Borough of Metuchen in the mid 1990s. He argued the landmark case of Brennan vs. Orban before the New Jersey Supreme Court (145 N.J. 282 (1996)), establishing the parameters for jury trials in marital tort cases."
+   ],
+   "facts": {
+    "education": [
+     "Clark University (B.A. cum laude 1985) and Boston University School of Law (J.D. 1988) (Best Brief Award in National Moot Court Competition)"
+    ]
+   },
+   "photo": "people/steven-k-warner.jpg",
+   "practices": [
+    "land-use-zoning",
+    "municipal-government",
+    "litigation"
+   ]
+  },
+  {
+   "slug": "ellen-m-gillespie",
+   "name": "Ellen M. Gillespie",
+   "role": "Partner",
+   "email": "gillespie@centraljerseylaw.com",
+   "bio": [
+    "Ellen M. Gillespie is an experienced attorney who brings more than 30 years legal experience to her practice which concentrates in Wills, Trusts and Estates, Estate Planning, Estate Administration, Elder Law, Medicaid Planning, Tax Law, Business and Corporate Law."
+   ],
+   "facts": {
+    "education": [
+     "LL.M., Taxation, Temple University, 1985",
+     "J.D., Rutgers University Law School, 1979",
+     "B.A., Fordham University, 1976, magna cum laude"
+    ],
+    "admissions": [
+     "New Jersey",
+     "Pennsylvania"
+    ]
+   },
+   "photo": "people/ellen-m-gillespie.jpg",
+   "practices": [
+    "business-corporate",
+    "wills-trusts-estates",
+    "residential-real-estate-debt"
+   ]
+  },
+  {
+   "slug": "michael-p-ogrodnick",
+   "name": "Michael P. O'Grodnick",
+   "role": "Partner",
+   "email": "ogrodnick@centraljerseylaw.com",
+   "bio": [
+    "Mr. O’Grodnick is a Partner at Savo Schalk. Since 2006, Michael has focused his practice in real property law and commercial litigation, with a particular concentration in land use, zoning, landlord-tenant, tax appeals, chancery matters, and all types of contract disputes.",
+    "Michael represents land developers from concept to construction and regularly appears before Planning Boards and Boards of Adjustment all over NJ. Michael has represented nearly all of New Jersey’s largest real estate developers and has shepherded hundreds of millions of dollars of land use applications in Somerset, Hunterdon, Warren and Middlesex Counties; including, North Branch Walk (364 luxury apartments/town-homes), Amwell Terrace (126 luxury apartments), Brookhaven Lofts (599 luxury apartments and a hotel), Hillsborough Village (191 luxury rentals/28000 SF retail), Branchburg Center (medical/office), Summit Green (535 luxury apartments/town-homes), Hills at Warren (192 luxury townhomes/apts.) in addition to various other commercial uses such as offices, self-storage facilities, COAH housing, nursing homes, recreation/tennis centers, churches, breweries/distilleries, residential subdivisions and retail applications. In 2022, Michael has over two million square feet of warehouse projects pending before land use boards.",
+    "Michael graduated Cum Laude from the University of Rhode Island in 2002 and earned his Juris Doctorate from New England Law Boston in 2005, where he was a member of the Land Use Law Society. Having litigated thousands of cases, Michael has developed a reputation as a practical, fair, and hard-working trial attorney. Throughout his career, Michael has successfully obtained millions of dollars in judgments on behalf of his clients and has prevailed on numerous cases in the Appellate Courts and has recently prevailed in a seminal Appellate Division Case regarding the statute of limitations for mortgage foreclosures.",
+    "Michael’s other core practice areas include civil and corporate litigation, municipal law, municipal tort defense, contract reviews, partnership disputes, commercial disputes, construction/insurance coverage disputes, will/estate litigation, collections, quiet titles, and general small claims/special civil part claims. Michael has represented many of the major NJ residential and commercial landlords and developers and has litigated well over 700 landlord/tenant eviction trials. He lectures in the area of landlord/tenant and land use law to other attorneys and real estate professionals."
+   ],
+   "facts": {},
+   "photo": "people/michael-p-ogrodnick.jpg",
+   "practices": [
+    "land-use-zoning",
+    "municipal-government",
+    "business-corporate",
+    "litigation",
+    "banking-bankruptcy",
+    "wills-trusts-estates",
+    "criminal-defense"
+   ]
+  },
+  {
+   "slug": "alexander-g-fisher",
+   "name": "Alexander G. Fisher",
+   "role": "Partner",
+   "email": "fisher@centraljerseylaw.com",
+   "bio": [
+    "Alexander G. Fisher is a recognized authority in land use, redevelopment, and municipal law in New Jersey. As a Partner at Savo Schalk, he has earned a reputation for blending litigation skill, municipal counsel experience, and policy leadership to deliver successful results for both public entities and private clients.",
+    "Mr. Fisher’s practice spans the full range of development and government matters, including zoning and planning board approvals, redevelopment area designations, affordable housing compliance, condemnation, environmental permitting, and related appellate litigation. He has guided municipalities through the complexities of the New Jersey Municipal Land Use Law, Local Lands and Buildings Law, and the Redevelopment Law, while also counseling developers and property owners on advancing major site plans, subdivisions, and redevelopment projects.",
+    "As Past Chairman of the New Jersey State Bar Association’s Land Use Section, Mr. Fisher has been at the forefront of shaping statewide legal discourse on development and housing. In recognition of his leadership, he received the New Jersey State Bar Association Legislative Contribution Award for his work on affordable housing legislation, underscoring his influence on both the legal profession and public policy.",
+    "He is frequently sought after as a lecturer, panelist, and advisor on emerging issues in land use and government law, and has presented to attorneys, planners, and municipal officials across the state. His ability to combine scholarly depth, practical insight, and courtroom advocacy has established him as a trusted leader in the field."
+   ],
+   "facts": {
+    "education": [
+     "J.D., Rutgers University School of Law, 2010",
+     "Articles Editor - Rutgers Law Review",
+     "Treasurer - Environmental Law Society",
+     "B.A., Grinnell College, 2007"
+    ],
+    "admissions": [
+     "New Jersey, 2010",
+     "District of New Jersey, 2010",
+     "New York, 2011",
+     "Southern District of New York, 2013",
+     "Eastern District of New York, 2013",
+     "United States Supreme Court, 2018"
+    ],
+    "memberships": [
+     "Past Chairman - Board of Directors, New Jersey State Bar Associate – Land Use Law Section",
+     "Somerset County Bar Association",
+     "New Jersey State Bar Association",
+     "Former Co-Chair, Somerset County ELC",
+     "Former Co-Chair, Real Estate/Zoning/Land Use, Somerset County Bar Association",
+     "Board of Trustees, Central Jersey Housing Resource Center"
+    ],
+    "appointments": [
+     "Deputy Township Attorney, Bridgewater Township",
+     "Borough Attorney, Borough of Rocky Hill",
+     "Deputy Borough Attorney, Borough of Middlesex",
+     "Deputy Borough Attorney, Borough of Flemington",
+     "Planning Board Attorney, Borough of Sayreville",
+     "Zoning Board Attorney, Borough of Sayreville",
+     "Former Zoning Board Attorney, Township of East Brunswick",
+     "Former Zoning Board Attorney, Township of East Windsor",
+     "Former Planning Board Attorney, Borough of South Plainfield",
+     "Former Zoning Board Attorney, Borough of South Plainfield",
+     "COAH Litigation Counsel, Borough of Manville",
+     "Former Planning Board Attorney, Township of Springfield"
+    ],
+    "matters": [
+     "388 Route 22 Readington Realty Holdings, LLC v. Twp. of Readington, 221 N.J. 318 (2015)",
+     "Charles F. Waskevich v. Herold Law, P.A., et al, 431 N.J. Super. 293 (App. Div. 2013)"
+    ]
+   },
+   "photo": "people/alexander-g-fisher.jpg",
+   "practices": [
+    "land-use-zoning",
+    "municipal-government",
+    "litigation",
+    "criminal-defense"
+   ]
+  },
+  {
+   "slug": "matthew-r-flynn",
+   "name": "Matthew R. Flynn",
+   "role": "Partner",
+   "email": "flynn@centraljerseylaw.com",
+   "bio": [
+    "Matthew R. Flynn is a partner at Savo Schalk and joined the firm in 2020. Mr. Flynn specializes in land use and municipal law, as well as complex civil litigation.",
+    "Mr. Flynn is primary or alternate counsel for a number of land use boards throughout central jersey assisting the boards in processing development applications and also performs work for private developers to shepherd them through the approval process. Mr. Flynn has a growing appellate practice and handles a variety of litigation matters including prerogative writ actions, complex civil litigation, chancery division litigation, and personal injury/tort claims defense. In 2021, he was appointed as special outside counsel for the Somerset County Board of Social Services.",
+    "Prior to joining the firm, Mr. Flynn was a clerk for The Honorable Patrick DeAlmeida, J.A.D. in the New Jersey Superior Court, Appellate Division, where he excelled at legal research and writing in a variety of subjects. While clerking for the Appellate Division, he would prepare legal memorandums to the panel of judges assigned to an appeal, dissecting the parties’ legal arguments and providing a recommendation on how the court should rule. Mr. Flynn also interned with Savo Schalk prior to his hiring as an associate attorney and has years of experience as a legal assistant for boutique firms in New Jersey.",
+    "Mr. Flynn graduated in the top ten of his class, cum laude, and as part of the order of the coif from Rutgers Law School in Camden, New Jersey in 2019. He was awarded the American Bankruptcy Institute’s Medal of Excellence after receiving the class’s high mark on an examination and received the Blaustein Award for superior legal scholarship.",
+    "While at Rutgers, he garnered valuable trial experience as part of the school’s Domestic Violence clinical practice program and was a staff writer for the Rutgers Journal of Law and Religion, which culminated in a published note entitled Polygamy in the Modern Constitutional Scheme about the intersection of criminal law and First Amendment freedoms. Prior to law school, Mr. Flynn received his B.A. in Political Science from The College of New Jersey and was part of the Pi Sigma Alpha Honor Society.",
+    "When not practicing law, Mr. Flynn is a proud dad, movie-goer, and tends to his analytical love of the NBA and its salary cap structure.",
+    "A-1440-21, Rise Against Hate v. Bridgewater Twp , representing Bridgewater Township on an appeal reversing the trial court’s decision and holding that residents have a reasonable expectation of privacy in their private email addresses.",
+    "A-2319-22, Rebecca Reed & Amanda Curry v. Elizabeth M. Muoio, et. al. , representing Middlesex Borough on an appeal seeking to overturn the trial court’s decision finding that the Council on Local Mandates exceeded their authority in invalidating a particular surcharge.",
+    "A-0844-23, Lois Henry v. Twp. of Cranford , representing Cranford Township on an appeal granting summary judgment to the Township on a trip-and-fall case.",
+    "A-1586-20, In re O’Farrell , representing Bridgewater Township on an appeal upholding the police chief’s denial of a permit to carry a handgun."
+   ],
+   "facts": {},
+   "photo": "people/matthew-r-flynn.jpg",
+   "practices": [
+    "municipal-government"
+   ]
+  },
+  {
+   "slug": "john-j-deluca-jr",
+   "name": "John J. DeLuca, Jr.",
+   "role": "Senior Associate",
+   "email": "deluca@centraljerseylaw.com",
+   "bio": [
+    "John J. DeLuca, Jr. joined Savo Schalk as a Senior Associate in 2024 and is a member of the New Jersey State Bar.",
+    "John J. DeLuca, Jr. earned a Juris Doctor degree from Rutgers Law School in 2019 and a Bachelor of Science degree in Accounting from Penn State University in 2012. He was admitted to the New Jersey Bar in 2019. Following law school, he was the law clerk for the Assignment Judge of the Middlesex County Superior Court during the 2019-2020 court term. Prior to attending law school, he worked as a financial controller and accounting analyst at Sanofi, a pharmaceutical manufacturer.",
+    "He is a member of the Middlesex County and New Jersey State Bar Associations. His areas of practice are Zoning and Land Use Law, Municipal & Government Law."
+   ],
+   "facts": {},
+   "photo": "people/john-j-deluca-jr.jpg",
+   "practices": [
+    "municipal-government"
+   ]
+  },
+  {
+   "slug": "christopher-j-sobieski",
+   "name": "Christopher J. Sobieski",
+   "role": "Associate",
+   "email": "sobieski@centraljerseylaw.com",
+   "bio": [
+    "Mr. Sobieski has years of hands-on experience with the intricacies of municipal, zoning and land use law. Having both served in and worked for municipal governments in New Jersey and Pennsylvania, Mr. Sobieski brings a unique perspective and passion to his practice.",
+    "He is admitted to practice law in the State of New Jersey and currently represents several municipalities and municipal land use boards across the State.",
+    "Mr. Sobieski is a graduate of Seton Hall University (B.A., History, cum laude 2015) and Seton Hall University School of Law (J.D. 2020), where he received the Award for Academic Excellence in Intellectual Property Law.",
+    "While pursuing his Juris Doctorate, Mr. Sobieski worked as a law clerk for a boutique law firm in Mendham Township and as a Zoning Officer for the Township of Warrington, Pennsylvania.",
+    "Mr. Sobieski served as Township Committeeman for the Township of East Amwell from 2019 to 2021 and as Deputy Mayor in 2020. During his tenure, he also served as a Class III Member on the East Amwell Township Joint Land Use Board and continues to serve as a Member of the Township’s Board of Health. Additionally, he represented East Amwell Township as a member of the Hunterdon Central Regional High School Board of Education from 2018 to 2019.",
+    "When not practicing law, Chris can be found lifting weights, hiking with his two dogs, or watching a great film."
+   ],
+   "facts": {
+    "education": [
+     "Seton Hall University (B.A., History, cum laude 2015) and Seton Hall University School of Law (J.D. 2020) (Award of Academic Excellence in Intellectual Property Law)"
+    ]
+   },
+   "photo": "people/christopher-j-sobieski.jpg",
+   "practices": [
+    "land-use-zoning",
+    "municipal-government"
+   ]
+  },
+  {
+   "slug": "evan-h-alter",
+   "name": "Evan H. Alter",
+   "role": "Associate",
+   "email": "alter@centraljerseylaw.com",
+   "bio": [
+    "Mr. Alter is an attorney whose practice focuses on zoning, land use, municipal and government law, and litigation. He brings a diverse range of legal experience to his practice, including experience in private practice, the courts, government, and legal advocacy.",
+    "After graduating from Rutgers Law School, Mr. Alter served concurrently as a judicial law clerk to the Honorable Mark Ciarrocca, Presiding Judge of the Civil Division, and the Honorable Robert Mega, Presiding Judge of the General Equity Division, in the Union County Superior Court. In this dual clerkship, he gained substantial experience researching and drafting statements of reasons and orders involving complex business litigation, foreclosure, personal injury, and medical malpractice.",
+    "While attending Rutgers Law School, Mr. Alter served as a student-attorney with the Rutgers Education, Health & Law Clinic, where he represented and advocated for indigent clients. He also served as Treasurer of the Newark Housing Rights Coalition. Mr. Alter gained additional legal experience as a law clerk with a personal injury and medical malpractice firm, as a legal intern with the Essex County Prosecutor’s Office, and as a judicial intern in the Essex County Superior Court’s Civil Division.",
+    "Mr. Alter graduated magna cum laude from Muhlenberg College with a double major in History and Media & Communications. He earned his Juris Doctorate from Rutgers Law School in Newark.",
+    "In his free time, Evan enjoys hiking, traveling, and hearing live music."
+   ],
+   "facts": {
+    "education": [
+     "Rutgers Law School (J.D. 2025) and Muhlenberg College (B.A., History and Media & Communications, magna cum laude 2022)"
+    ]
+   },
+   "photo": null,
+   "practices": [
+    "land-use-zoning",
+    "litigation",
+    "municipal-government"
+   ]
+  },
+  {
+   "slug": "william-b-savo",
+   "name": "William B. Savo",
+   "role": "Of Counsel",
+   "email": "savo@centraljerseylaw.com",
+   "bio": [
+    "William B. Savo is an accomplished and experienced transactional attorney who concentrates his practice in banking, municipal, commercial, real estate, wills, trusts and estates. He has represented governmental entities for more than 40 years, having been Attorney for Readington Township for 17 years, former Deputy Somerset County Counsel, counsel to Raritan Valley Community College, Attorney for Somerset Valley Sewerage Authority and former Readington Township Planning Board Attorney. He is currently Deputy Township Attorney for Bridgewater Township."
+   ],
+   "facts": {
+    "education": [
+     "J.D., Seton Hall University, 1967",
+     "A.B., Muhlenberg College, 1964"
+    ],
+    "admissions": [
+     "New Jersey"
+    ]
+   },
+   "photo": "people/william-b-savo.jpg",
+   "practices": [
+    "banking-bankruptcy",
+    "municipal-government",
+    "business-corporate",
+    "commercial-real-estate",
+    "land-use-zoning",
+    "wills-trusts-estates"
+   ]
+  },
+  {
+   "slug": "kelly-m-carey",
+   "name": "Kelly M. Carey",
+   "role": "Of Counsel",
+   "email": "carey@centraljerseylaw.com",
+   "bio": [
+    "Ms. Carey specializes in land use and municipal law and litigation. She is Of Counsel at the firm and has been licensed to practice law in New Jersey, in state and federal courts, since 1996. She has practiced land use and municipal law for over 25 years and represents both municipal boards and private clients. Clients rely on her for the full range of development advise including, land use and zoning applications, presentation of applications to land use boards, preparation of expert witnesses, review of master plan amendments, zoning ordinance drafting, redevelopment designations and planning approval, condemnation, affordable housing compliance, PILOT programs and environmental permitting.",
+    "Ms. Carey has been appointed to represent municipal boards around the state for more than 15 years. That representation includes the Old Bridge Planning Board, Parsippany- Troy Hills Planning Board, Middlesex Borough Planning Board, Clark Planning Board, and Montville Zoning Board. She was conflict counsel for the South Orange Zoning and Planning Boards. She currently represents the Clark Zoning Board, and the Monroe Township Affordable Housing Board. She also assists with the firm’s representation of several other land use boards. She takes great pride in guiding board members who volunteer their time and talents for the benefit of their communities.",
+    "Prior to joining the firm, she represented private clients and successfully secured approvals for the construction of new commercial buildings, from Newark to Egg Harbor City, redevelopment of existing facilities and conditional use approvals for businesses from Buena Borough to the City of Plainfield, and residential variance approvals for clients from Ocean County to Bergen County. She was also part of a team representing several municipalities in central New Jersey as special counsel on affordable housing matters. She finds it rewarding to witness her clients enjoying the properties that she had a part in shaping.",
+    "Ms. Carey also has considerable experience representing municipal land use boards in prerogative writ proceedings including appearances before the trial courts, Appellate Division and the New Jesey Supreme Court. Monarch Communities, LLC v. Twp. of Montville , A-0929-23, N.J. Sup. Ct. Docket # 090407. She has also represented municipal interests in the Affordable Housing Dispute Resolution Program, and before County Tax Courts.",
+    "Prior to starting private practice, Ms. Carey served as Law Clerk to the Honorable Robert A. Longhi, AJSC (retired) Middlesex County Superior Court, and was a member of the Dickinson School of Law Environmental Law Journal. She has also volunteered as a member of the Zoning Board and Economic Development Board in her hometown."
+   ],
+   "facts": {
+    "education": [
+     "J.D., The Dickinson School of Law, 1996",
+     "B.S., University of Scranton, 1993 cum laude"
+    ],
+    "admissions": [
+     "New Jersey, 1996",
+     "United States District Court, District of New Jersey, 1996",
+     "New York, 1997"
+    ],
+    "memberships": [
+     "New Jersey State Bar, Land Use Section"
+    ]
+   },
+   "photo": "people/kelly-m-carey.jpg",
+   "practices": [
+    "land-use-zoning",
+    "municipal-government",
+    "litigation"
+   ]
+  },
+  {
+   "slug": "peter-u-lanfrit",
+   "name": "Peter U. Lanfrit",
+   "role": "Of Counsel",
+   "email": "lanfrit@centraljerseylaw.com",
+   "bio": [
+    "Peter U. Lanfrit is a Cum Laude graduate of Xavier University, Cincinnati, Ohio, and Rutgers University Law School, Newark, New Jersey. He has been a practicing attorney in New Jersey since 1973.",
+    "Mr. Lanfrit was initially employed by the law firm of Edward J. Dolan, Esq., Carteret, New Jersey, from 1972 through 1977 where he tried numerous personal injury and workers compensation matters.In November of 1978, Mr. Lanfrit established his own law firm in Hillsborough, New Jersey. A partnership was formed with Frank Linnus, Esq., in July of 1981 and continued through April of 1988. The law firm of Lanfrit & Linnus, Esqs. engaged in the general practice of law including litigation, personal injury, workers’ compensation and land use.",
+    "In 1988, Mr. Lanfrit formed the law firm of Lanfrit, Liscinski & Rosenwasser, P.C., with Theodore Liscinski, Jr., Esq. and Robert D. Rosenwasser, Esq. From April of 1988 until February of 2003 his practice was devoted to the fields of land use and real estate.",
+    "In March of 2003, Mr. Lanfrit formed the Law Firm of Lanfrit and Tullio, LLC with Michelle M. Tullio, Esq., since that time Mr. Lanfrit has devoted his practice to the fields of land use and real estate. In March of 2015, Mr. Lanfrit formed the Law Firm of Peter U. Lanfrit, LLC and in 2019 he joined the Law Firm of Borrus, Goldin, Foley, Vignuolo, Hyman and Stahl, P.C. In 2024, Mr. Lanfrit joined the firm of Savo Schalk as an Of-Counsel attorney.",
+    "Mr. Lanfrit has served as Municipal Court Judge for the Township of South Brunswick and has previously served as a Municipal Prosecutor and Rent Leveling Board Attorney. Mr. Lanfrit is a past President of the Franklin Township Chamber of Commerce and has served on its Board of Directors. Mr. Lanfrit was a member of Raritan Valley County Club and served in its Board of Directors and is a past president.",
+    "Mr. Lanfrit has since 1981 handled numerous land use applications including but not limited to Commercial Development (shopping centers, stand alone sites, office buildings, office parks, hotels and restaurants), Industrial Development (manufacturing facilities, warehouses, data centers, mining operations, transfer stations and cellular towers), Redevelopment, Residential (single family residential subdivisions, active adult communities, multifamily dwellings, townhouses and condominiums) and Public (churches, schools and charter schools)."
+   ],
+   "facts": {},
+   "photo": null,
+   "practices": [
+    "land-use-zoning",
+    "commercial-real-estate"
+   ]
+  },
+  {
+   "slug": "john-f-bracaglia-jr",
+   "name": "John F. Bracaglia, Jr.",
+   "role": "Of Counsel",
+   "email": "bracaglia@centraljerseylaw.com",
+   "bio": [
+    "John F. Bracaglia, Jr. is a former bankruptcy trustee with extensive experience in representing both debtors and creditors in all chapters under the bankruptcy code. He has successfully confirmed numerous Chapter 13 individual reorganizations as well as Chapter 11 business reorganizatons. He has been involved in a number of bankruptcy cases that have resulted in reported decisions, including In Re Molnar Brothers, In Re Jackus and In re Fesq, which was decided by the Third Circuit Court of Appeals. Mr. Bracaglia serves in a volunteer capacity on the Board of Directors of the Daytop New Jersey Family Association, which is a drug and alcohol treatment facility, and devotes considerable time and energy in assisting families where a loved one is afflicted with the disease of addiction."
+   ],
+   "facts": {
+    "education": [
+     "J.D., Seton Hall University, 1977",
+     "B.A., Dickinson College, 1974"
+    ],
+    "admissions": [
+     "New Jersey, 1977",
+     "Third Circuit Court of Appeals, 1983"
+    ]
+   },
+   "photo": "people/john-f-bracaglia-jr.jpg",
+   "practices": [
+    "banking-bankruptcy",
+    "commercial-real-estate",
+    "litigation",
+    "residential-real-estate-debt"
+   ]
+  },
+  {
+   "slug": "edward-a-halpern",
+   "name": "Edward A. Halpern",
+   "role": "Of Counsel",
+   "email": "halpern@centraljerseylaw.com",
+   "bio": [
+    "Edward A. Halpern is a skilled, intelligent attorney who specializes in municipal and government law, business and corporate transactions, commercial law, construction, real estate, corporate transactions and land use and zoning. He is the former Corporate Counsel for Hillsborough Township."
+   ],
+   "facts": {
+    "education": [
+     "J.D., Rutgers Law School",
+     "B.A., Rutgers University"
+    ],
+    "admissions": [
+     "New Jersey",
+     "New York",
+     "District of Columbia"
+    ]
+   },
+   "photo": "people/edward-a-halpern.jpg",
+   "practices": [
+    "municipal-government",
+    "business-corporate",
+    "litigation",
+    "commercial-real-estate",
+    "land-use-zoning"
+   ]
+  }
+ ],
+ "results": [
+  {
+   "figure": "$20 Million",
+   "label": "Church property verdict",
+   "practice": "litigation",
+   "attorneys": [],
+   "summary": "After four years of litigation and an eleven-day trial, the Essex County Chancery Division ruled fully in favor of our clients, the Board of Trustees of the First Presbyterian Church in Newark (2019).",
+   "source": "https://centraljerseylaw.com/result/20-million-victory/"
+  },
+  {
+   "figure": "Unanimous",
+   "label": "NJ Supreme Court decision",
+   "practice": "land-use-zoning",
+   "attorneys": [
+    "kelly-m-carey"
+   ],
+   "summary": "Kelly M. Carey argued Monarch Communities LLC v. Township of Montville Zoning Board of Adjustment; the Court revised the Sica test for inherently beneficial use variances.",
+   "source": "https://centraljerseylaw.com/result/kelly-m-carey-secures-new-jersey-supreme-court-decision-clarifying-decades-old-zoning-variance-standard/"
+  },
+  {
+   "figure": "$8 Million",
+   "label": "Saved in a brain injury defense",
+   "practice": "litigation",
+   "attorneys": [],
+   "summary": "Highly successful defense in brain injury matter. Through the experience and persistence of our trial attorneys, our firm saved the client over $8 million after a lengthy jury trial.",
+   "source": "https://centraljerseylaw.com/result/8-million-saved-in-brain-injury-defense/"
+  },
+  {
+   "figure": "$3 Million+",
+   "label": "Whistleblower (CEPA) verdict",
+   "practice": "employment-education-civil-rights",
+   "attorneys": [
+    "charles-z-schalk"
+   ],
+   "summary": "A verdict of more than three million dollars against a large corporation for an employee under the Conscientious Employee Protection Act. Charles Schalk was lead counsel.",
+   "source": "https://centraljerseylaw.com/result/3-million-verdict/"
+  },
+  {
+   "figure": "~$3 Million",
+   "label": "Minority shareholder settlement",
+   "practice": "business-corporate",
+   "attorneys": [
+    "charles-z-schalk"
+   ],
+   "summary": "A settlement of close to $3 million for minority shareholders who were oppressed by the majority shareholder. Charles Schalk was lead counsel.",
+   "source": "https://centraljerseylaw.com/result/close-to-3-million-settlement/"
+  },
+  {
+   "figure": "$2.5 Million",
+   "label": "Personal injury arbitration award",
+   "practice": "personal-injury",
+   "attorneys": [
+    "charles-z-schalk"
+   ],
+   "summary": "On January 15, 2015, Charles Schalk obtained a $2.5 million arbitration award in a complex and unusual personal injury matter in Mercer County.",
+   "source": "https://centraljerseylaw.com/result/2-5-million-personal-injury-arbitration-award/"
+  },
+  {
+   "figure": "$2.025 Million",
+   "label": "Student due-process verdict",
+   "practice": "employment-education-civil-rights",
+   "attorneys": [
+    "charles-z-schalk",
+    "michael-p-ogrodnick"
+   ],
+   "summary": "A three-week jury trial in Essex County for a student expelled from dental school (Vladimer v. UMDNJ). Charles Schalk was lead counsel, assisted by Michael O’Grodnick.",
+   "source": "https://centraljerseylaw.com/result/2-025-million-student-verdict/"
+  },
+  {
+   "figure": "$2 Million",
+   "label": "Settlement for a crash passenger",
+   "practice": "personal-injury",
+   "attorneys": [],
+   "summary": "Our firm represented the plaintiff in a $2 million settlement for massive head trauma and multiple fractures.",
+   "source": "https://centraljerseylaw.com/result/2-million-settlement/"
+  },
+  {
+   "figure": "$950,000",
+   "label": "Defective tool settlement",
+   "practice": "personal-injury",
+   "attorneys": [],
+   "summary": "A settlement for a mechanic who suffered a severe hand injury from a defectively designed tool that lacked proper warnings.",
+   "source": "https://centraljerseylaw.com/result/950000-settlement/"
+  },
+  {
+   "figure": "191 homes",
+   "label": "Hillsborough Village Center approved",
+   "practice": "land-use-zoning",
+   "attorneys": [
+    "michael-p-ogrodnick"
+   ],
+   "summary": "Planning board approval (May 2019) for 191 apartments in 13 buildings on Route 206, 46 of them affordable. Michael O’Grodnick represented the applicant.",
+   "source": "https://centraljerseylaw.com/result/savo-schalk-partner-obtains-approvals-for-188-apartments-in-hillsborough/"
+  },
+  {
+   "figure": "126 homes",
+   "label": "Hillsborough residential approvals",
+   "practice": "land-use-zoning",
+   "attorneys": [
+    "michael-p-ogrodnick"
+   ],
+   "summary": "Preliminary and final site plan approval for nine buildings, including 36 affordable units, after five years of work with the municipality.",
+   "source": "https://centraljerseylaw.com/result/savo-schalk-obtains-approvals-for-126-unit-residential-project-in-hillsborough/"
+  },
+  {
+   "figure": "Route 22",
+   "label": "Major self-storage approval, Branchburg",
+   "practice": "land-use-zoning",
+   "attorneys": [
+    "michael-p-ogrodnick"
+   ],
+   "summary": "Zoning board approval (June 2019) to convert a vacant 40-year-old bank building into one of the largest self-storage facilities on the East Coast.",
+   "source": "https://centraljerseylaw.com/result/savo-schalk-partner-obtains-approvals-for-one-of-the-largest-self-storage-facilities-on-the-east-coast-in-branchburg/"
+  }
+ ],
+ "recognition": [
+  {
+   "title": "New Jersey Super Lawyers",
+   "detail": "Steven K. Warner, zoning and land use, every year since 2011"
+  },
+  {
+   "title": "Professional Lawyer of the Year",
+   "detail": "Somerset County, awarded to Steven K. Warner"
+  },
+  {
+   "title": "Top published verdicts",
+   "detail": "New Jersey Law Journal, employment and civil verdicts, several years running"
+  },
+  {
+   "title": "Court-approved mediator",
+   "detail": "Charles Z. Schalk, State of New Jersey roster"
+  }
+ ],
+ "testimonials": [
+  {
+   "author": "Stephen V.",
+   "matter": "Education law",
+   "attorney": "charles-z-schalk",
+   "quote": "I give Mr. Schalk my strongest recommendation based on his knowledge, competency, listening skills and finally, taking on one of the biggest law firms in the State of New Jersey that was retained by these defendants and successfully achieving a favorable outcome.",
+   "story": [
+    "“I can’t help you because your son “admitted” “was the constant response from law firms as I sought legal help for my son who was unlawfully removed from the New Jersey Dental School only months before graduation. A rogue Oral Surgery Professor falsely accused my son of ignoring his Instructor (despite giving him a grade of “A” in his Department) and requested to a rogue Dean a disciplinary hearing which she granted to determine his punishment. Upon receiving the hearing notification, we responded by reaching out to the Dean to apologize assuming it was acceptable to her. Our apology was even reviewed by her attorney who corrected and expanded it and was read at the hearing At this “hearing” my son was asked by the Chairman to respond “yes” or “no” whether he “takes responsibility” to a series of charges such as “You failed to record conversations by telephone with your patient in the patient’s chart.” His response of “yes” to taking “responsibility” to his charges, said the Chairman meant he was “admitting” he violated School policy.",
+    "I was willing to risk my life savings to help my son and had given up hope after spending months and months seeking a law firm willing to take our case. So it was at the last minute at the very end of this search, we had arranged a 2:00 P.M. meeting with a Morristown, N.J. law firm specializing in education law. The meeting ended badly and was told because our son had “admitted” in a hearing body it was an obstacle they couldn’t overcome and there was little chance of success. Incredibly, the previous day we had contacted the Mauro, Savo law firm if they would be interested in reviewing documents concerning a top dental student at the New Jersey Dental School being expelled and was told “yes.” It was on the way to Morristown that we passed through Somerville, N.J. and dropped off those documents expecting rejection. Incredibly, while we stopped for coffee on the way back in the depths of despair and lamenting our fate and telling my son it was over, that my cell phone rang and I heard the words “Mr. Schalk would like to see you.”",
+    "Mr. Schalk was able to recognize the injustice done to my son and took on our case where so many other law firms rejected us. Why did he accept us? It was the higher moral imperative that I believe convinced him.. His outstanding professional skills at trial resulted in the biggest student verdict in the U.S. against the individual Deans and accusing Professors. For example, at trial he achieved a Perry Mason moment when he overcame a Court obstacle that we couldn’t initially argue that the Dean lets cheaters graduate. This was a product of his effective cross examination of defendants as well as his listening skills.",
+    "Finally, the emotional toll of engaging a law firm and filing a lawsuit was enormous on our family. Mr. Schalk treated our family and our son with compassion. That is, we were more than just a client to him. His compassion for Jason was a source of comfort."
+   ]
+  },
+  {
+   "author": "Babette",
+   "matter": "Landlord-tenant & civil litigation",
+   "attorney": "michael-p-ogrodnick",
+   "quote": "Attorney O’Grodnick has tried over 450 landlord-tenant evictions and over 100 civil litigation matters for my company and he has won nearly every single case. The professionalism and sound advice separates Savo Schalk from many other firms, which is why Savo Schalk has served as our lawyers for over 35 years.",
+   "story": []
+  },
+  {
+   "author": "Joseph",
+   "matter": "Homeowners association",
+   "attorney": "charles-z-schalk",
+   "quote": "After being refused for over seven years, my request for a handicap ramp was finally allowed by my homestead association. Not before I contacted Charles Z. Schalk, Esq., knowing of his background and after submitting many plans, my plan was accepted and completed in a few short weeks. Each day I wheel down the ramp I think of the indebtedness I have for attorney Charles Z. Schalk, Esq’s knowledge of the law. Thank You",
+   "story": []
+  }
+ ],
+ "decisions": [
+  "Michael O’Grodnick prevails in the Appellate Division, reversing the dismissal of a mortgage foreclosure case",
+  "SAS APP DIV DECISION",
+  "PORTER HAYDEN GOSS APP. DIV. DECISION",
+  "P&H APP DIV DECISION",
+  "NJT COMES APP DIV DECISION",
+  "DCAGC MGMT. v. GALLUCIO",
+  "BWT DIAMOND STATE APP DIV DECISION",
+  "ELLIOT vs MOLD and ECKERT vs SCHILLING",
+  "In re ANTHONY TAMMARO, INC., Debtor. John R. BLOCK, Secretary, United States Department of Agriculture, Plaintiff, v. ANTHONY TAMMARO, INC., Defendant.",
+  "In Re William FESQ, Debtor, BRANCHBURG PLAZA ASSOCIATES L.P., Appellant, v. William FESQ.",
+  "MANT v. GILLESPIE",
+  "AMBOY NATIONAL BANK v. ZAHOOR AHMED AND IFFAT AHMED",
+  "MARK FUSCO v. RARITAN TOWNSHIP PLANNING BOARD AND RARITAN JUNCTION, LLC",
+  "HILLSBOROUGH TOWNE CENTER ASSOCIATES, LLC v. BOARD OF ADJUSTMENT OF THE TOWNSHIP OF HILLSBOROUGH"
+ ],
+ "photos": [
+  {
+   "file": "photos/2018-05-29-19-13-00-view-east-along-new-jersey-state-route-2.jpg",
+   "title": "2018-05-29 19 13 00 View east along New Jersey State Route 28 (Main Street) at Union Street in Somerville, Somerset County, New Jersey",
+   "artist": "Famartin",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:2018-05-29_19_13_00_View_east_along_New_Jersey_State_Route_28_(Main_Street)_at_Union_Street_in_Somerville,_Somerset_County,_New_Jersey.jpg",
+   "placeholder": false
+  },
+  {
+   "file": "photos/90-nassau-street-princeton-new-jersey-2024-043-jpg.jpg",
+   "title": "90 Nassau Street, Princeton New Jersey 2024 043",
+   "artist": "Photograph by Mike Peel (www.mikepeel.net).",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:90_Nassau_Street,_Princeton_New_Jersey_2024_043.jpg",
+   "placeholder": false
+  },
+  {
+   "file": "photos/a-mixed-race-family-walking-in-a-park-with-european-flags-p0.jpg",
+   "title": "A mixed-race family walking in a park with European flags (P044728-798775)",
+   "artist": "Xavier Lejeune",
+   "license": "CC BY 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:A_mixed-race_family_walking_in_a_park_with_European_flags_(P044728-798775).jpg",
+   "placeholder": true
+  },
+  {
+   "file": "photos/books-on-shelf-at-the-ghalib-chamber-law-library-jpg.jpg",
+   "title": "Books on Shelf at the Ghalib Chamber Law Library",
+   "artist": "Energyme",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Books_on_Shelf_at_the_Ghalib_Chamber_Law_Library.jpg",
+   "placeholder": true
+  },
+  {
+   "file": "photos/business-people-discussing-in-the-cafe-44876336845-jpg.jpg",
+   "title": "Business people discussing in the cafe (44876336845)",
+   "artist": "Rawpixel Ltd",
+   "license": "CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Business_people_discussing_in_the_cafe_(44876336845).jpg",
+   "placeholder": true
+  },
+  {
+   "file": "photos/conference-room-in-the-berlaymont-building-2-jpg.jpg",
+   "title": "Conference room in the Berlaymont building 2",
+   "artist": "Gnom",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Conference_room_in_the_Berlaymont_building_2.JPG",
+   "placeholder": true
+  },
+  {
+   "file": "photos/courtgavel-jpg.jpg",
+   "title": "CourtGavel",
+   "artist": "Jonathunder",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:CourtGavel.JPG",
+   "placeholder": false
+  },
+  {
+   "file": "photos/farmland-along-mellicks-woods-road-pohatcong-township-nj-feb.jpg",
+   "title": "Farmland along Mellicks Woods Road, Pohatcong Township, NJ, Feb. 2026",
+   "artist": "Mr. Matté (if there is an issue with this image, contact me using this image's C",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Farmland_along_Mellicks_Woods_Road,_Pohatcong_Township,_NJ,_Feb._2026.jpg",
+   "placeholder": false
+  },
+  {
+   "file": "photos/first-reformed-church-and-somerset-county-courthouse-somervi.jpg",
+   "title": "First Reformed Church and Somerset County Courthouse, Somerville, NJ, Oct. 2026",
+   "artist": "Mr. Matté (if there is an issue with this image, contact me using this image's C",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:First_Reformed_Church_and_Somerset_County_Courthouse,_Somerville,_NJ,_Oct._2026.jpg",
+   "placeholder": false
+  },
+  {
+   "file": "photos/john-m-fleming-home-place-jpg.jpg",
+   "title": "John M. Fleming Home Place",
+   "artist": "Jim Roberts",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:John_M._Fleming_Home_Place.jpg",
+   "placeholder": false
+  },
+  {
+   "file": "photos/nj-capitol-jpg.jpg",
+   "title": "NJ Capitol",
+   "artist": "Lowlova",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:NJ_Capitol.JPG",
+   "placeholder": false
+  },
+  {
+   "file": "photos/old-somerset-county-courthouse-somerville-nj-july-2026-jpg.jpg",
+   "title": "Old Somerset County Courthouse, Somerville, NJ July 2026",
+   "artist": "4300streetcar",
+   "license": "CC BY 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Old_Somerset_County_Courthouse,_Somerville,_NJ_July_2026.jpg",
+   "placeholder": false
+  },
+  {
+   "file": "photos/raritan-river-nj-south-branch-and-north-branch-confluence-jp.jpg",
+   "title": "Raritan River, NJ - South Branch and North Branch confluence",
+   "artist": "Zeete",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Raritan_River,_NJ_-_South_Branch_and_North_Branch_confluence.jpg",
+   "placeholder": false
+  },
+  {
+   "file": "photos/somerset-county-courthouse-somerville-nj-front-view-jpg.jpg",
+   "title": "Somerset County Courthouse, Somerville, NJ - front view",
+   "artist": "Zeete",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Somerset_County_Courthouse,_Somerville,_NJ_-_front_view.jpg",
+   "placeholder": false
+  }
+ ],
+ "copyEdits": [
+  "The seven-name firm name is shortened to \"Savo Schalk\" in running text (the full legal name stays in the footer and legal pages).",
+  "Typo: \"Bankrutpcy\" → \"Bankruptcy\"",
+  "Typo: \"governmental entitles\" → \"governmental entities\"",
+  "Typo: \"in an experienced\" → \"is an experienced\"",
+  "Typo: \"well-know\" → \"well-known\"",
+  "Typo: \"backround\" → \"background\"",
+  "Typo: \"an handicap\" → \"a handicap\"",
+  "Typo: \"can longer\" → \"can no longer\"",
+  "Typo: \"for his local government clients\" → \"for local government clients\"",
+  "Typo: \"seen his clients\" → \"seen clients\"",
+  "Typo: \"Collections It is\" → \"It is\"",
+  "Typo: \"PETER U. LANFRIT is\" → \"Peter U. Lanfrit is\"",
+  "Typo: \"(908) 527-0707\" → \"(908) 526-0707\""
+ ],
+ "toConfirm": [
+  "Attorney count: the About page says 18 lawyers, the Attorneys page lists 15.",
+  "Exact firm name: the site uses three variants (with and without Corsini and Warner) and the schema.org data lists an old street address (77 N Bridge St).",
+  "Facebook link points to a page named for the firm's former name (Mauro Savo Camerino Grant Schalk).",
+  "Permission to publish each result and testimonial on the new site (NJ RPC 7.1 requires the prior-results disclaimer).",
+  "Office hours (not published on the current site).",
+  "Headshots for Evan H. Alter and Peter U. Lanfrit (none on the current site).",
+  "The student verdict is titled $2.25 million on the current site but described as $2.025 million; the new site uses $2.025 million.",
+  "The Hillsborough apartments result is titled 188 apartments but the article says 191; the new site uses 191.",
+  "The current Property Tax Appeals and Defense of Collection Lawsuits pages carry text from other pages, so the new site does not reuse it."
+ ]
+}

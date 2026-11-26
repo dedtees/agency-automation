@@ -1,7 +1,7 @@
 import { db } from "@/core/db";
 import { themeSlug } from "@/integrations/templates/wp/theme";
 import { getConfig } from "@/core/config";
-import { findPreview } from "@/research/previews";
+import { findPreview, findSiteDir } from "@/research/previews";
 import { loadPortal, PortalAccessError } from "@/services/portal";
 import { SectionPreview } from "../../components/SectionPreview";
 import { checkoutAction, favoriteAction } from "./actions";
@@ -38,6 +38,15 @@ export default async function Portal({ params, searchParams }: { params: Promise
               ? <span className="pill owner">★ Your favorite</span>
               : <form action={favoriteAction.bind(null, token, c.id)}><button>Make this my favorite</button></form>}
           </div>
+          {findSiteDir(themeSlug({ name: c.name, client })) && (
+            <div className="card" style={{ margin: "12px 0", display: "flex", justifyContent: "space-between", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
+              <div>
+                <strong>Your full website is ready to explore</strong>
+                <div className="muted" style={{ fontSize: 13 }}>Every page, with your attorneys, practice areas, results and a working contact form. Click around on your laptop or phone.</div>
+              </div>
+              <a className="btn primary" href={`/p/${token}/site/${c.id}/`} target="_blank" rel="noopener">Open the website</a>
+            </div>
+          )}
           {findPreview(themeSlug({ name: c.name, client }), "desktop-fold") && (
             <div style={{ margin: "12px 0" }}>
               <a href={`/p/${token}/shot/${c.id}/desktop`} target="_blank">
