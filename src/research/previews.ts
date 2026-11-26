@@ -17,3 +17,9 @@ export function findPreview(slug: string, view: PreviewView): string | undefined
   if (!/^[a-z0-9-]+$/.test(slug)) return undefined;
   return previewDirs().map((d) => join(d, `${slug}-${view}.jpg`)).find((f) => existsSync(f));
 }
+
+/** Folder of a concept's full static site (index.html + pages), exported by scripts/site-preview.ts. */
+export function findSiteDir(slug: string): string | undefined {
+  if (!/^[a-z0-9-]+$/.test(slug)) return undefined;
+  return previewDirs().map((d) => join(d, "sites", slug)).find((d) => existsSync(join(d, "index.html")));
+}

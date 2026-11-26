@@ -96,5 +96,6 @@
     "Exact firm name: the site uses three variants (with and without Corsini and Warner) and the schema.org data lists an old street address (77 N Bridge St).",
     "Facebook link points to a page named for the firm's former name (Mauro Savo Camerino Grant Schalk).",
     "Permission to publish each result and testimonial on the new site (NJ RPC 7.1 requires the prior-results disclaimer)."
-  ]
+  ],
+  "siteContent": "case-studies/central-jersey-law/site"
 }

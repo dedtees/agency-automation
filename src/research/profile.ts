@@ -31,6 +31,8 @@ export const ClientProfileSchema = z.object({
   disclaimer: z.string().optional(),
   /** Things the client should confirm before launch (conflicting facts found during research). */
   toConfirm: z.array(z.string()).default([]),
+  /** Repo-relative folder with a full site build (content.json + assets/), e.g. case-studies/<slug>/site. */
+  siteContent: z.string().regex(/^[\w./-]+$/).refine((v) => !v.split("/").includes("..")).optional(),
 });
 export type ClientProfile = z.infer<typeof ClientProfileSchema>;
 
