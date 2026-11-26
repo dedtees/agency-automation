@@ -11,11 +11,11 @@ import { SectionFeedback } from "./SectionFeedback";
 export const dynamic = "force-dynamic";
 const money = (c: number) => `$${(c / 100).toLocaleString("en-US", { minimumFractionDigits: 0 })}`;
 
-export default async function Portal({ params, searchParams }: { params: Promise<{ token: string }>; searchParams: Promise<{ paid?: string }> }) {
+export default async function Portal({ params, searchParams }: { params: Promise<{ token: string }>; searchParams: Promise<{ paid?: string; preview?: string }> }) {
   const { token } = await params;
-  const { paid } = await searchParams;
+  const { paid, preview } = await searchParams;
   let client;
-  try { client = await loadPortal(db, token); }
+  try { client = await loadPortal(db, token, { preview: preview === "1" }); }
   catch (e) {
     if (e instanceof PortalAccessError) return <main><h1>Link expired</h1><p>{e.message} Please contact us for a new one.</p></main>;
     throw e;
@@ -26,6 +26,7 @@ export default async function Portal({ params, searchParams }: { params: Promise
 
   return (
     <main>
+      {preview === "1" && <div className="card" style={{ borderColor: "var(--warn)" }}>Owner preview. This is what the client sees; ratings you leave here are saved as theirs.</div>}
       <h1>Website concepts for {client.businessName}</h1>
       {paid && <div className="card" style={{ borderColor: "var(--ok)" }}>Thanks! Your payment is being confirmed. We'll email you shortly.</div>}
       <p className="muted">Rate each section, tell us what you'd change, and mark your favorite. Your notes save automatically.</p>

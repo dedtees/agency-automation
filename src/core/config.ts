@@ -7,7 +7,9 @@ const int = (v: string | undefined, d: number) => (v ? parseInt(v, 10) : d);
 
 export function getConfig(env: NodeJS.ProcessEnv = process.env) {
   return {
-    appUrl: env.APP_URL ?? "http://localhost:3000",
+    appUrl: env.APP_URL
+      ?? (env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${env.VERCEL_PROJECT_PRODUCTION_URL}` : undefined)
+      ?? (env.VERCEL_URL ? `https://${env.VERCEL_URL}` : "http://localhost:3000"),
     agencyName: env.AGENCY_NAME ?? "Your Agency",
     agencyFromEmail: env.AGENCY_FROM_EMAIL ?? "hello@example.com",
 
@@ -26,7 +28,7 @@ export function getConfig(env: NodeJS.ProcessEnv = process.env) {
     providers: {
       concepts: env.CONCEPT_PROVIDER ?? "library",   // library | researched (writes from Client.profile)
       templates: env.TEMPLATE_PROVIDER ?? "fake",     // fake | wp-block-theme
-      email: env.EMAIL_PROVIDER ?? "console",         // console | resend | smtp | gmail
+      email: env.EMAIL_PROVIDER ?? "console",         // console | outlook | resend
       payments: env.PAYMENT_PROVIDER ?? "fake",       // fake | stripe
       hosting: env.HOSTING_PROVIDER ?? "fake",        // fake | wp-engine | kinsta | vps-wpcli ...
     },
@@ -50,6 +52,14 @@ export function getConfig(env: NodeJS.ProcessEnv = process.env) {
       refreshToken: env.QUICKBOOKS_REFRESH_TOKEN,
       environment: (env.QUICKBOOKS_ENV ?? "sandbox") as "sandbox" | "production",
     },
+    outlook: {
+      tenantId: env.MS_TENANT_ID,
+      clientId: env.MS_CLIENT_ID,
+      clientSecret: env.MS_CLIENT_SECRET,
+      /** Mailbox the emails are sent from, e.g. hello@youragency.com */
+      sender: env.OUTLOOK_SENDER,
+    },
+    cronSecret: env.CRON_SECRET,
     adminPassword: env.ADMIN_PASSWORD,
   };
 }

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { db } from "@/core/db";
 import { PIPELINE_STAGES } from "@/core/types";
 import { NEEDS_OWNER } from "@/pipeline/stages";
-import { addClientAction, importFileAction, runJobsAction } from "./actions";
+import { addClientAction, importFileAction, loadSampleDataAction, runJobsAction } from "./actions";
 
 export default async function AdminHome() {
   const [clients, pendingEmails, queuedJobs, lastImports] = await Promise.all([
@@ -26,6 +26,14 @@ export default async function AdminHome() {
           <span key={s} className={`pill ${NEEDS_OWNER.includes(s) ? "owner" : ""}`}>{s.replaceAll("_", " ").toLowerCase()}: {byStage[s]}</span>
         ))}
       </div>
+
+      {clients.length === 0 && (
+        <div className="card">
+          <strong>No clients yet.</strong> Import a spreadsheet below, or{" "}
+          <form action={loadSampleDataAction} style={{ display: "inline" }}><button className="primary">load 4 sample clients</button></form>{" "}
+          to try the flow.
+        </div>
+      )}
 
       <div className="grid">
         <div className="card">
