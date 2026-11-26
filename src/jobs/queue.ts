@@ -4,11 +4,13 @@ import type { Db } from "../core/db";
 import { generateConcepts } from "../services/concepts";
 import { fulfillOrder } from "../services/orders";
 import { sendMessage } from "../services/outreach";
+import { auditClientSite } from "../services/research";
 import { providers } from "../integrations/registry";
 
 type Handler = (db: Db, payload: any) => Promise<void>;
 
 export const handlers: Record<string, Handler> = {
+  AUDIT_SITE: async (db, p) => { await auditClientSite(db, p.clientId); },
   GENERATE_CONCEPTS: (db, p) => generateConcepts(db, p.clientId),
   SEND_MESSAGE: (db, p) => sendMessage(db, p.messageId),
   FULFILL_ORDER: (db, p) => fulfillOrder(db, p.orderId),

@@ -6,3 +6,7 @@ next-env.d.ts
 prisma/*.db
 prisma/*.db-journal
 packages/
+storage/
+
+# per-run output with local ids and portal links
+case-studies/*/out/run.json

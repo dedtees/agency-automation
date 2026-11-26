@@ -1,0 +1,208 @@
+{
+  "url": "https://centraljerseylaw.com/",
+  "auditedAt": "2026-11-26T14:16:37.810Z",
+  "stack": {
+    "server": "Apache",
+    "php": {
+      "version": "7.4.33",
+      "status": "end-of-life",
+      "eolDate": "2022-11-28",
+      "daysPastEol": 1459,
+      "target": "8.3"
+    },
+    "wordpress": "6.9.12",
+    "theme": {
+      "slug": "savo-schalk",
+      "name": "Savo Schalk",
+      "author": "cws",
+      "version": "1.0.0",
+      "basedOn": "Underscores",
+      "kind": "classic"
+    },
+    "plugins": [
+      "Akismet",
+      "All in One SEO",
+      "Contact Form 7",
+      "ExactMetrics",
+      "Popup Maker",
+      "Redirection",
+      "Solid Security (iThemes)"
+    ],
+    "libraries": {
+      "jquery": "1.11.1",
+      "bootstrap": "3.3.7"
+    }
+  },
+  "content": {
+    "title": "Savo, Schalk, Corsini, Warner, Gillespie, O'Grodnick & Fisher | Savo Schalk - Central NJ Lawyers",
+    "metaDescription": "At Savo, Schalk, Corsini, Warner, Gillespie, O’Grodnick & Fisher, we regard the representation of our clients as an honor, a privilege and a steadfast responsibility.",
+    "h1": [
+      "NEW JERSEY BUSINESS AND INDIVIDUAL SERVICES ATTORNEYS"
+    ],
+    "images": 23,
+    "imagesMissingAlt": 4,
+    "copyrightYear": 2022,
+    "duplicateLinks": [
+      "Government Affairs and Election Law",
+      "Workers Compensation",
+      "Construction Litigation"
+    ],
+    "businessNames": [
+      "Savo Schalk - Central NJ Lawyers",
+      "Savo, Schalk, Gillespie, O'Grodnick & Fisher, P.A.",
+      "Savo, Schalk, Corsini, Gillespie, O’Grodnick & Fisher, PA",
+      "Savo, Schalk, Corsini, Warner, Gillespie, O’Grodnick & Fisher, P.A"
+    ],
+    "stalePages": [
+      {
+        "modified": "2018-02-14T13:02:31",
+        "slug": "privacy-policy"
+      },
+      {
+        "modified": "2018-02-14T13:03:07",
+        "slug": "disclaimer"
+      },
+      {
+        "modified": "2018-02-14T13:05:21",
+        "slug": "site-map"
+      },
+      {
+        "modified": "2018-02-21T10:37:30",
+        "slug": "appellate-decisions"
+      },
+      {
+        "modified": "2018-10-26T15:19:30",
+        "slug": "testimonials"
+      },
+      {
+        "modified": "2018-10-26T15:21:43",
+        "slug": "our-attorneys"
+      },
+      {
+        "modified": "2018-10-26T15:35:04",
+        "slug": "practice-areas"
+      },
+      {
+        "modified": "2022-02-18T21:30:39",
+        "slug": "contact-us"
+      },
+      {
+        "modified": "2022-07-25T15:13:44",
+        "slug": "about-the-firm"
+      },
+      {
+        "modified": "2022-07-25T15:15:17",
+        "slug": "news"
+      },
+      {
+        "modified": "2022-07-25T15:16:33",
+        "slug": "our-results"
+      }
+    ],
+    "latestPostDate": "2026-10-19T10:05:58"
+  },
+  "findings": [
+    {
+      "id": "php-eol",
+      "severity": "critical",
+      "area": "platform",
+      "title": "Server runs PHP 7.4.33, which stopped getting security fixes 2022-11-28",
+      "detail": "PHP 7.4 has been end-of-life for 1459 days. Hosts are retiring it, and WordPress, plugins and themes increasingly require PHP 8.",
+      "fix": "Move the site to PHP 8.3+ with a theme and plugins tested on it."
+    },
+    {
+      "id": "legacy-theme",
+      "severity": "high",
+      "area": "platform",
+      "title": "Custom classic theme \"Savo Schalk\" v1.0.0 (built on Underscores)",
+      "detail": "A one-off theme by cws that nobody maintains. Classic PHP themes of this age commonly use functions removed or made stricter in PHP 8 (each(), create_function(), count() on non-arrays, required-after-optional parameters), which turn into fatal errors after a PHP upgrade. Its PHP source isn't public, so the exact breakages can only be confirmed with server access.",
+      "fix": "Replace it with a block theme (theme.json + patterns) that has no custom PHP beyond a few lines, tested on PHP 8.3."
+    },
+    {
+      "id": "old-jquery",
+      "severity": "high",
+      "area": "security",
+      "title": "Theme ships its own jQuery 1.11.1",
+      "detail": "jQuery before 3.5.0 has known cross-site-scripting flaws (CVE-2020-11022, CVE-2020-11023), and this copy bypasses the up-to-date jQuery that WordPress provides.",
+      "fix": "Drop the bundled copy; a block theme needs no jQuery at all."
+    },
+    {
+      "id": "old-bootstrap",
+      "severity": "medium",
+      "area": "security",
+      "title": "Bootstrap 3.3.7 (end of life since 2019)",
+      "detail": "Versions before 3.4.1 have known XSS issues (CVE-2018-14040/14041/14042, CVE-2019-8331).",
+      "fix": "Replace with theme.json layout and core blocks."
+    },
+    {
+      "id": "dupe-links",
+      "severity": "medium",
+      "area": "content",
+      "title": "3 link labels point to two different pages",
+      "detail": "For example: \"Government Affairs and Election Law\", \"Workers Compensation\", \"Construction Litigation\". Visitors and search engines see duplicate, competing pages.",
+      "fix": "Merge the duplicates and redirect the old URLs."
+    },
+    {
+      "id": "nap-mismatch",
+      "severity": "medium",
+      "area": "seo",
+      "title": "The firm's name appears 4 different ways in the site's own data",
+      "detail": "\"Savo Schalk - Central NJ Lawyers\" vs \"Savo, Schalk, Gillespie, O'Grodnick & Fisher, P.A.\" vs \"Savo, Schalk, Corsini, Gillespie, O’Grodnick & Fisher, PA\" vs \"Savo, Schalk, Corsini, Warner, Gillespie, O’Grodnick & Fisher, P.A\"",
+      "fix": "Use one exact legal name everywhere (schema.org, footer, logo alt, directory listings) for local search."
+    },
+    {
+      "id": "version-leak",
+      "severity": "low",
+      "area": "security",
+      "title": "Server announces its PHP version to everyone",
+      "detail": "Every response carries \"X-Powered-By: PHP/7.4.33\", which tells attackers exactly which unpatched version to target.",
+      "fix": "Turn off expose_php on the new host."
+    },
+    {
+      "id": "no-hsts",
+      "severity": "low",
+      "area": "security",
+      "title": "No HSTS header",
+      "detail": "Browsers aren't told to always use HTTPS.",
+      "fix": "Enable HSTS on the new host."
+    },
+    {
+      "id": "xmlrpc",
+      "severity": "low",
+      "area": "security",
+      "title": "XML-RPC endpoint is open",
+      "detail": "xmlrpc.php is a common brute-force target and is rarely needed.",
+      "fix": "Disable XML-RPC unless the Jetpack app or a publishing tool needs it."
+    },
+    {
+      "id": "img-alt",
+      "severity": "low",
+      "area": "accessibility",
+      "title": "4 of 23 homepage images have no alt text",
+      "detail": "Screen-reader users hear nothing for these, and ADA-related website demand letters often cite missing alt text.",
+      "fix": "Give every meaningful image alt text; mark decorative ones as such."
+    },
+    {
+      "id": "stale-copyright",
+      "severity": "low",
+      "area": "content",
+      "title": "Footer says © 2022",
+      "detail": "Signals an unmaintained site to visitors.",
+      "fix": "Generate the year automatically."
+    },
+    {
+      "id": "stale-pages",
+      "severity": "low",
+      "area": "content",
+      "title": "11 pages untouched for 3+ years",
+      "detail": "privacy-policy (2018-02-14), disclaimer (2018-02-14), site-map (2018-02-14), appellate-decisions (2018-02-21), testimonials (2018-10-26), our-attorneys (2018-10-26)",
+      "fix": "Review and refresh during the migration."
+    }
+  ],
+  "summary": {
+    "critical": 1,
+    "high": 2,
+    "medium": 3,
+    "low": 6
+  }
+}

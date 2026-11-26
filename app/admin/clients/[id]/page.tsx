@@ -14,6 +14,7 @@ export default async function ClientPage({ params }: { params: Promise<{ id: str
       orders: { include: { deployment: true, delivery: true } },
       messages: { orderBy: { createdAt: "desc" } },
       sources: true,
+      audits: { orderBy: { createdAt: "desc" }, take: 1 },
     },
   });
   if (!client) notFound();
@@ -32,6 +33,17 @@ export default async function ClientPage({ params }: { params: Promise<{ id: str
         )}
         <form action={holdClientAction.bind(null, id)}><button>Put on hold</button></form>
       </div>
+
+      {client.audits[0] && (() => {
+        const r: any = client.audits[0].report;
+        return (
+          <div className="card">
+            <h3>Current site audit <span className="muted" style={{ fontSize: 13 }}>{client.audits[0].createdAt.toISOString().slice(0, 10)}</span></h3>
+            <p className="muted">PHP {r.stack.php.version ?? "?"} ({r.stack.php.status}) · WordPress {r.stack.wordpress ?? "?"} · theme {r.stack.theme.name ?? r.stack.theme.slug ?? "?"} · {r.summary.critical} critical, {r.summary.high} high, {r.summary.medium} medium, {r.summary.low} low</p>
+            <ul>{r.findings.slice(0, 8).map((f: any) => <li key={f.id}><strong>{f.severity}</strong>: {f.title}</li>)}</ul>
+          </div>
+        );
+      })()}
 
       {drafts.length > 0 && (
         <form action={approveConceptsAction.bind(null, id)} className="card">

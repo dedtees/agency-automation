@@ -69,11 +69,27 @@ Every stage change is checked against `src/pipeline/stages.ts` and logged as a `
 
 | Integration | Now | Next |
 |---|---|---|
-| Concepts | `library`: 4 starter layouts with placeholder copy | AI-written copy per section, real imagery |
-| Templates | `fake`: in-app preview | Generate a WordPress block theme (theme.json + patterns), zip, store, staging preview |
+| Research | `npm run audit`: outside-in audit of the client's current site (PHP/WordPress/theme/library versions, security headers, SEO/accessibility/content issues). Profile JSON per client | Extract the profile automatically (AI) instead of writing it by hand |
+| Concepts | `library`: 4 starter layouts with placeholder copy. `researched`: two directions written from `Client.profile` (real services, team, results, reviews) | AI-written copy per section, real imagery |
+| Templates | `fake`: in-app preview. `wp-block-theme`: real installable block theme (theme.json v3 + patterns, no jQuery, no custom PHP), zipped, signed expiring download links | Staging preview site per concept |
 | Email | `console` (logs) | `resend` adapter included; Gmail/SMTP possible |
 | Payments | `fake` checkout page | `stripe` adapter included (Checkout + webhook signature check); needs keys |
 | Hosting | `fake` | Pick a host: managed WP API, or VPS + WP-CLI |
+
+## Research and QA
+
+```bash
+npm run audit -- https://client-site.com [--save dir]   # findings, worst first
+npm run case-study -- case-studies/central-jersey-law   # whole pipeline for one real client, stops at the approval gate
+npm run wp:smoke -- --wp-zip wordpress.zip --sqlite-zip sqlite-database-integration.zip \
+  --theme storage/themes/<slug> --shots storage/previews  # installs WordPress on local PHP, fails on any PHP warning
+```
+
+`wp:smoke` needs only PHP 8.x with pdo_sqlite (no MySQL). Screenshots written to
+`storage/previews/` show up in the client portal above each concept.
+
+Case studies live in `case-studies/<client>/` (intake record, researched profile,
+saved site snapshot). See `case-studies/central-jersey-law/README.md`.
 
 ## Open decisions
 - Hosting provider for built sites

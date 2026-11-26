@@ -1,4 +1,7 @@
+import { existsSync } from "node:fs";
+import { join } from "node:path";
 import { db } from "@/core/db";
+import { themeSlug } from "@/integrations/templates/wp/theme";
 import { getConfig } from "@/core/config";
 import { loadPortal, PortalAccessError } from "@/services/portal";
 import { SectionPreview } from "../../components/SectionPreview";
@@ -35,6 +38,16 @@ export default async function Portal({ params, searchParams }: { params: Promise
               ? <span className="pill owner">★ Your favorite</span>
               : <form action={favoriteAction.bind(null, token, c.id)}><button>Make this my favorite</button></form>}
           </div>
+          {existsSync(join(cfg.storageDir, "previews", `${themeSlug({ name: c.name, client })}-desktop-fold.jpg`)) && (
+            <div style={{ margin: "12px 0" }}>
+              <a href={`/p/${token}/shot/${c.id}/desktop`} target="_blank">
+                <img src={`/p/${token}/shot/${c.id}/desktop-fold`} alt={`${c.name} home page on a laptop`} style={{ width: "100%", borderRadius: 8, border: "1px solid var(--line)" }} />
+              </a>
+              <p className="muted" style={{ fontSize: 13, margin: "4px 0 0" }}>
+                The real WordPress design. Open the <a href={`/p/${token}/shot/${c.id}/desktop`} target="_blank">full page</a> or the <a href={`/p/${token}/shot/${c.id}/mobile`} target="_blank">phone version</a>, then rate each section below.
+              </p>
+            </div>
+          )}
           {c.sections.map((s) => {
             const f = fb(c.id, s.id);
             return (

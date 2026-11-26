@@ -1,0 +1,100 @@
+{
+  "legalName": "Savo, Schalk, Corsini, Warner, Gillespie, O'Grodnick & Fisher, P.A.",
+  "shortName": "Savo Schalk",
+  "tagline": "Serious results in serious cases.",
+  "industry": "Law firm",
+  "summary": "A full-service law firm in historic Somerville, overlooking the Somerset County Courthouse, representing businesses, government bodies and individuals throughout New Jersey, New York and Maine.",
+  "phone": "(908) 526-0707",
+  "fax": "(908) 725-8483",
+  "email": "info@centraljerseylaw.com",
+  "address": {
+    "street": "56 East Main Street, Suite 301",
+    "city": "Somerville",
+    "state": "NJ",
+    "zip": "08876",
+    "note": "3rd floor of the Hamon Building. Reserved spaces on the east side of the building, or use the parking deck in the rear.",
+    "mapsQuery": "58 East Main Street, Somerville, NJ 08876"
+  },
+  "serviceArea": "All of New Jersey, plus New York and Maine",
+  "languages": ["English", "Español"],
+  "about": [
+    "We regard the representation of our clients as an honor, a privilege and a steadfast responsibility. Our goal is to provide the best legal services in a convenient, caring and cost-effective manner.",
+    "We are one of the largest and most successful law firms in Somerset County, with a distinguished history and a team of diverse, capable attorneys who have earned the respect of judges, prosecutors and fellow lawyers for their integrity and technical knowledge.",
+    "Our offices are in historic Somerville, overlooking the Somerset County Courthouse."
+  ],
+  "stats": [
+    { "value": "23,000+", "label": "clients represented" },
+    { "value": "15", "label": "attorneys" },
+    { "value": "3", "label": "states: NJ, NY and ME" }
+  ],
+  "serviceGroups": [
+    {
+      "audience": "Businesses & municipalities",
+      "groups": [
+        { "name": "Land Use, Zoning & Environmental", "blurb": "Approvals, variances, condemnation and environmental compliance, from site plans to the NJ Supreme Court.", "covers": ["Land Use, Zoning, Condemnation and Environmental Law"] },
+        { "name": "Municipal & Government Law", "blurb": "Counsel to towns, boards and public bodies, including government affairs and election law.", "covers": ["Municipal and Government Law", "Government Affairs and Election Law"] },
+        { "name": "Business & Corporate", "blurb": "Forming, buying and selling businesses, and resolving shareholder and partner disputes.", "covers": ["Business and Corporate", "Formation/Purchase/Sale of Small Businesses", "Shareholder and Partner Disputes", "Minority Shareholder Actions"] },
+        { "name": "Commercial Real Estate", "blurb": "Transactions, leasing, landlord/tenant matters and property tax appeals.", "covers": ["Commercial Real Estate", "Landlord/Tenant", "Property Tax Appeals"] },
+        { "name": "Litigation & Dispute Resolution", "blurb": "Trial-tested litigators for commercial, construction, products liability and insurance defense matters, plus mediation.", "covers": ["Litigation", "Construction Litigation", "Products Liability", "Insurance Defense", "Dispute Mediation"] },
+        { "name": "Banking, Bankruptcy & Creditors' Rights", "blurb": "Chapter 7, 11 and 13, collections, workouts and creditor representation.", "covers": ["Banking and Financial Services", "Bankruptcy – Chapter 7, 11 and 13", "Creditor Rights", "Collections", "Business Debt Workouts"] },
+        { "name": "Employers & Workers' Compensation", "blurb": "Advice and defense for employers, including workers' compensation.", "covers": ["Representation of Employers", "Workers Compensation"] }
+      ]
+    },
+    {
+      "audience": "Individuals & families",
+      "groups": [
+        { "name": "Personal Injury & Medical Malpractice", "blurb": "Accidents, medical malpractice, workers' compensation and Social Security disability appeals.", "covers": ["Accident and Personal Injury", "Medical Malpractice", "Workers Compensation", "Social Security Disability Appeals"] },
+        { "name": "Family & Matrimonial", "blurb": "Divorce, custody and support, handled with discretion.", "covers": ["Matrimonial and Family Law"] },
+        { "name": "Wills, Trusts & Estates", "blurb": "Planning and administration for families and business owners.", "covers": ["Wills, Trusts and Estates"] },
+        { "name": "Criminal & Municipal Court", "blurb": "Criminal defense, DWI, traffic and drug charges.", "covers": ["Criminal Defense", "Municipal Court – Drunk Driving, Traffic and Drug Violations"] },
+        { "name": "Employment, Education & Civil Rights", "blurb": "Employees' rights, student discipline and expulsion, and civil rights claims.", "covers": ["New Jersey Employment Law Representation for Employees", "Expulsion, Student Discipline and Education Law", "Civil Rights"] },
+        { "name": "Home, Debt & Real Estate", "blurb": "Residential closings, mortgage and loan modifications, and defense of collection lawsuits.", "covers": ["Residential Real Estate", "Mortgage Modification, Loan Modifications, and Debt Resolution", "Defense of Collection Lawsuits", "Bankruptcy – Individual"] }
+      ]
+    }
+  ],
+  "team": [
+    { "name": "Charles Z. Schalk", "role": "Managing Partner" },
+    { "name": "Christopher Corsini", "role": "Partner" },
+    { "name": "Steven K. Warner", "role": "Partner" },
+    { "name": "Ellen M. Gillespie", "role": "Partner" },
+    { "name": "Michael P. O'Grodnick", "role": "Partner" },
+    { "name": "Alexander G. Fisher", "role": "Partner" },
+    { "name": "Matthew R. Flynn", "role": "Partner" },
+    { "name": "John J. DeLuca, Jr.", "role": "Senior Associate" },
+    { "name": "Christopher J. Sobieski", "role": "Associate" },
+    { "name": "Evan H. Alter", "role": "Associate" },
+    { "name": "William B. Savo", "role": "Of Counsel" },
+    { "name": "Kelly M. Carey", "role": "Of Counsel" },
+    { "name": "Peter U. Lanfrit", "role": "Of Counsel" },
+    { "name": "John F. Bracaglia, Jr.", "role": "Of Counsel" },
+    { "name": "Edward A. Halpern", "role": "Of Counsel" }
+  ],
+  "testimonials": [
+    { "quote": "I give Mr. Schalk my strongest recommendation based on his knowledge, competency, listening skills and finally, taking on one of the biggest law firms in the State of New Jersey and successfully achieving a favorable outcome.", "author": "Stephen V." },
+    { "quote": "Attorney O'Grodnick has tried over 450 landlord-tenant evictions and over 100 civil litigation matters for my company and he has won nearly every single case.", "author": "Babette" },
+    { "quote": "After being refused for over seven years, my request for a handicap ramp was finally allowed by my homestead association.", "author": "Joseph" }
+  ],
+  "results": [
+    { "title": "NJ Supreme Court decision clarifying a decades-old zoning variance standard", "detail": "Kelly M. Carey represented the Montville Township Zoning Board of Adjustment in Monarch Communities LLC v. Township of Montville; the Court adopted the approach she argued, unanimously." },
+    { "title": "$8 million saved in a brain injury defense", "detail": "" },
+    { "title": "Close to $3 million settlement", "detail": "" },
+    { "title": "$950,000 settlement", "detail": "" },
+    { "title": "Approvals for a 126-unit residential project in Hillsborough", "detail": "Including 36 affordable units, after five years of work with the municipality." },
+    { "title": "Approvals for one of the largest self-storage facilities on the East Coast", "detail": "Reusing a 40-year-old building on Route 22 in Branchburg." }
+  ],
+  "payments": {
+    "label": "Make a payment",
+    "url": "https://link.clover.com/urlshortener/8tWtym",
+    "note": "Visa, Mastercard and American Express. Please include your file number and invoice number."
+  },
+  "social": [
+    { "label": "Facebook", "href": "http://www.facebook.com/pages/Mauro-Savo-Camerino-Grant-Schalk/153389194727894" }
+  ],
+  "disclaimer": "Attorney advertising. Prior results do not guarantee a similar outcome. Contacting us through this site does not create an attorney-client relationship; please don't send confidential information until we have agreed to represent you.",
+  "toConfirm": [
+    "Attorney count: the About page says 18 lawyers, the Attorneys page lists 15.",
+    "Exact firm name: the site uses three variants (with and without Corsini and Warner) and the schema.org data lists an old street address (77 N Bridge St).",
+    "Facebook link points to a page named for the firm's former name (Mauro Savo Camerino Grant Schalk).",
+    "Permission to publish each result and testimonial on the new site (NJ RPC 7.1 requires the prior-results disclaimer)."
+  ]
+}
