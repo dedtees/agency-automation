@@ -1,8 +1,7 @@
-import { existsSync } from "node:fs";
-import { join } from "node:path";
 import { db } from "@/core/db";
 import { themeSlug } from "@/integrations/templates/wp/theme";
 import { getConfig } from "@/core/config";
+import { findPreview } from "@/research/previews";
 import { loadPortal, PortalAccessError } from "@/services/portal";
 import { SectionPreview } from "../../components/SectionPreview";
 import { checkoutAction, favoriteAction } from "./actions";
@@ -39,7 +38,7 @@ export default async function Portal({ params, searchParams }: { params: Promise
               ? <span className="pill owner">★ Your favorite</span>
               : <form action={favoriteAction.bind(null, token, c.id)}><button>Make this my favorite</button></form>}
           </div>
-          {existsSync(join(cfg.storageDir, "previews", `${themeSlug({ name: c.name, client })}-desktop-fold.jpg`)) && (
+          {findPreview(themeSlug({ name: c.name, client }), "desktop-fold") && (
             <div style={{ margin: "12px 0" }}>
               <a href={`/p/${token}/shot/${c.id}/desktop`} target="_blank">
                 <img src={`/p/${token}/shot/${c.id}/desktop-fold`} alt={`${c.name} home page on a laptop`} style={{ width: "100%", borderRadius: 8, border: "1px solid var(--line)" }} />

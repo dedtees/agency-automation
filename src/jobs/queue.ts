@@ -11,7 +11,7 @@ type Handler = (db: Db, payload: any) => Promise<void>;
 
 export const handlers: Record<string, Handler> = {
   AUDIT_SITE: async (db, p) => { await auditClientSite(db, p.clientId); },
-  GENERATE_CONCEPTS: (db, p) => generateConcepts(db, p.clientId),
+  GENERATE_CONCEPTS: (db, p) => generateConcepts(db, p.clientId, p.generator),
   SEND_MESSAGE: (db, p) => sendMessage(db, p.messageId),
   FULFILL_ORDER: (db, p) => fulfillOrder(db, p.orderId),
   SUSPEND_SITE: async (db, p) => {

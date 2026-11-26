@@ -4,9 +4,9 @@ import { providers } from "../integrations/registry";
 import { logEvent, transition } from "../pipeline/engine";
 
 /** Generate concepts for a client (run by the worker via the GENERATE_CONCEPTS job). */
-export async function generateConcepts(db: Db, clientId: string) {
+export async function generateConcepts(db: Db, clientId: string, generator?: string) {
   const client = await db.client.findUniqueOrThrow({ where: { id: clientId } });
-  const gen = providers.concepts();
+  const gen = providers.concepts(generator);
   const builder = providers.templates();
   const drafts = await gen.generate(client, getConfig().conceptsPerClient);
 
@@ -41,8 +41,9 @@ export async function approveConcepts(db: Db, clientId: string, actor = "owner",
   await draftPortalInvite(db, clientId);
 }
 
-export async function requestConcepts(db: Db, clientId: string, actor = "owner") {
+/** `generator` overrides CONCEPT_PROVIDER for this one request (case studies always use "researched"). */
+export async function requestConcepts(db: Db, clientId: string, actor = "owner", generator?: string) {
   await transition(db, clientId, "REQUEST_CONCEPTS", { actor });
-  await db.job.create({ data: { type: "GENERATE_CONCEPTS", payload: { clientId } } });
+  await db.job.create({ data: { type: "GENERATE_CONCEPTS", payload: generator ? { clientId, generator } : { clientId } } });
   await logEvent(db, clientId, "JOB_QUEUED", { type: "GENERATE_CONCEPTS" });
 }

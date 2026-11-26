@@ -2,7 +2,8 @@ import Link from "next/link";
 import { db } from "@/core/db";
 import { PIPELINE_STAGES } from "@/core/types";
 import { NEEDS_OWNER } from "@/pipeline/stages";
-import { addClientAction, importFileAction, loadSampleDataAction, runJobsAction } from "./actions";
+import { CASE_STUDIES } from "@/services/caseStudy";
+import { addClientAction, importFileAction, loadCaseStudyAction, loadSampleDataAction, runJobsAction } from "./actions";
 
 export default async function AdminHome() {
   const [clients, pendingEmails, queuedJobs, lastImports] = await Promise.all([
@@ -34,6 +35,16 @@ export default async function AdminHome() {
           to try the flow.
         </div>
       )}
+
+      <div className="card">
+        <strong>Case studies:</strong>{" "}
+        {CASE_STUDIES.map((c) => (
+          <form key={c.slug} action={loadCaseStudyAction.bind(null, c.slug)} style={{ display: "inline" }}>
+            <button>Load {c.label}</button>
+          </form>
+        ))}{" "}
+        <span className="muted">Imports the client with its site audit and researched concepts, ready for your approval. Nothing is sent.</span>
+      </div>
 
       <div className="grid">
         <div className="card">

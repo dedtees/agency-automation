@@ -11,56 +11,30 @@ process.env.CONCEPT_PROVIDER ??= "researched";
 process.env.TEMPLATE_PROVIDER ??= "wp-block-theme";
 process.env.CONCEPTS_PER_CLIENT ??= "2";
 
-const { existsSync, mkdirSync, readFileSync, writeFileSync } = await import("node:fs");
-const { join } = await import("node:path");
+const { mkdirSync, writeFileSync } = await import("node:fs");
+const { join, resolve } = await import("node:path");
 const { db } = await import("../src/core/db");
-const { runImport } = await import("../src/intake/importer");
-const { runDueJobs } = await import("../src/jobs/queue");
-const { loadSnapshot } = await import("../src/research/snapshotFile");
-const { approveConcepts, requestConcepts } = await import("../src/services/concepts");
-const { auditClientSite, setClientProfile } = await import("../src/services/research");
+const { runCaseStudy } = await import("../src/services/caseStudy");
 
 const dir = process.argv[2];
-if (!dir || !existsSync(join(dir, "client.json"))) { console.error("Usage: npm run case-study -- case-studies/<client>"); process.exit(2); }
+if (!dir) { console.error("Usage: npm run case-study -- case-studies/<client>"); process.exit(2); }
 const out = join(dir, "out");
 mkdirSync(out, { recursive: true });
-const step = (s: string) => console.log(`\n▸ ${s}`);
-const stage = async (id: string) => (await db.client.findUniqueOrThrow({ where: { id } })).stage;
 
-step("Intake");
-const records = JSON.parse(readFileSync(join(dir, "client.json"), "utf8"));
-const imp = await runImport(db, "manual", { records });
-const client = await db.client.findFirstOrThrow({ where: { website: records[0].website }, orderBy: { createdAt: "desc" } });
-console.log(`  ${client.businessName}: ${imp.created} new, ${imp.updated} merged (stage ${client.stage})`);
+const r = await runCaseStudy(db, resolve(dir), { live: process.argv.includes("--live"), approve: true });
+const report: any = r.audit.report;
+console.log(`▸ Intake: ${r.client.businessName} (${r.imported.created} new, ${r.imported.updated} merged)`);
+console.log(`▸ Audit: PHP ${r.audit.phpVersion} (${report.stack.php.status}), WordPress ${r.audit.wpVersion}, ${report.findings.length} findings ${JSON.stringify(report.summary)}`);
+console.log(`▸ Concepts:`);
+for (const c of r.concepts) console.log(`  ${c.name}: ${c.sections.map((s) => s.kind).join(" → ")}\n    package ${c.packagePath}`);
+console.log(`▸ Approval gate: invite ${r.invite?.status} — "${r.invite?.subject}" (not sent)`);
+console.log(`  portal: ${r.portalUrl}\n  stage: ${r.stage}`);
 
-step("Research: audit the current site");
-const audit = await auditClientSite(db, client.id, process.argv.includes("--live") ? undefined : loadSnapshot(join(dir, "snapshot")));
-const report: any = audit.report;
-console.log(`  PHP ${audit.phpVersion} (${report.stack.php.status}), WordPress ${audit.wpVersion}, ${report.findings.length} findings: ${JSON.stringify(report.summary)}`);
 writeFileSync(join(out, "audit.json"), JSON.stringify(report, null, 2));
-
-step("Research: business profile");
-await setClientProfile(db, client.id, JSON.parse(readFileSync(join(dir, "profile.json"), "utf8")), "research");
-console.log("  profile saved");
-
-step("Generate concepts (researched copy → WordPress block themes)");
-if (["NEW", "CONCEPTS_IN_REVIEW"].includes(await stage(client.id))) { await requestConcepts(db, client.id, "case-study"); await runDueJobs(db); }
-const concepts = await db.concept.findMany({ where: { clientId: client.id, status: { in: ["DRAFT", "APPROVED"] } }, include: { sections: { orderBy: { position: "asc" } } }, orderBy: { createdAt: "asc" } });
-for (const c of concepts) console.log(`  ${c.name}: ${c.sections.map((s) => s.kind).join(" → ")}\n    package ${c.packagePath}`);
-console.log(`  stage: ${await stage(client.id)}`);
-
-step("Owner approval → client portal + invite draft (not sent)");
-if ((await stage(client.id)) === "CONCEPTS_IN_REVIEW") await approveConcepts(db, client.id, "owner");
-const invite = await db.outboundMessage.findFirst({ where: { clientId: client.id, kind: "PORTAL_INVITE" }, orderBy: { createdAt: "desc" } });
-const portal = invite?.body.match(/https?:\/\/\S+\/p\/[\w-]+/)?.[0];
-console.log(`  invite: ${invite?.status} — "${invite?.subject}"`);
-console.log(`  portal: ${portal}`);
-console.log(`  stage: ${await stage(client.id)}`);
-
 writeFileSync(join(out, "run.json"), JSON.stringify({
-  clientId: client.id, stage: await stage(client.id), auditId: audit.id,
-  concepts: concepts.map((c) => ({ id: c.id, name: c.name, templateKey: c.templateKey, packagePath: c.packagePath, sections: c.sections.map((s) => s.kind) })),
-  invite: invite && { id: invite.id, status: invite.status, to: invite.toEmail, subject: invite.subject }, portal,
+  clientId: r.client.id, stage: r.stage, auditId: r.audit.id,
+  concepts: r.concepts.map((c) => ({ id: c.id, name: c.name, templateKey: c.templateKey, packagePath: c.packagePath, sections: c.sections.map((s) => s.kind) })),
+  invite: r.invite && { id: r.invite.id, status: r.invite.status, to: r.invite.toEmail, subject: r.invite.subject }, portal: r.portalUrl,
 }, null, 2));
-console.log(`\nWrote ${out}/run.json and audit.json. Admin: http://localhost:3000/admin/clients/${client.id}`);
+console.log(`\nWrote ${out}/run.json and audit.json. Admin: http://localhost:3000/admin/clients/${r.client.id}`);
 await db.$disconnect();

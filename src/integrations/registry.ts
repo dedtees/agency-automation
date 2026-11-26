@@ -23,7 +23,7 @@ const pick = <T>(kind: string, map: Record<string, T>, id: string): T => {
 };
 
 export const providers = {
-  concepts: (): ConceptGenerator => pick("concepts", { library: libraryGenerator, researched: researchedGenerator }, getConfig().providers.concepts),
+  concepts: (id = getConfig().providers.concepts): ConceptGenerator => pick("concepts", { library: libraryGenerator, researched: researchedGenerator }, id),
   templates: (): TemplateBuilder => pick("templates", { fake: fakeTemplateBuilder, "wp-block-theme": wpBlockThemeBuilder }, getConfig().providers.templates),
   email: (): EmailProvider => pick("email", { console: consoleEmail, outlook: outlookEmail, resend: resendEmail }, getConfig().providers.email),
   payments: (id = getConfig().providers.payments): PaymentProvider => pick("payments", { fake: fakePayments, stripe: stripePayments }, id),

@@ -21,12 +21,13 @@ export function getConfig(env: NodeJS.ProcessEnv = process.env) {
     portalLinkDays: int(env.PORTAL_LINK_DAYS, 30),
 
     /** Where generated themes, packages and preview screenshots are written. */
-    storageDir: env.STORAGE_DIR ?? "./storage",
+    /** On Vercel only /tmp is writable, so files written there don't outlive the request's instance. */
+    storageDir: env.STORAGE_DIR ?? (env.VERCEL ? "/tmp/storage" : "./storage"),
     /** Signs short-lived download links for purchased templates. Required in production. */
     downloadSigningSecret: env.DOWNLOAD_SIGNING_SECRET || (env.NODE_ENV === "production" ? undefined : "dev-only-download-secret"),
 
     providers: {
-      concepts: env.CONCEPT_PROVIDER ?? "library",   // library | researched (writes from Client.profile)
+      concepts: env.CONCEPT_PROVIDER ?? "researched", // researched (writes from Client.profile, else falls back to library) | library
       templates: env.TEMPLATE_PROVIDER ?? "fake",     // fake | wp-block-theme
       email: env.EMAIL_PROVIDER ?? "console",         // console | outlook | resend
       payments: env.PAYMENT_PROVIDER ?? "fake",       // fake | stripe

@@ -26,10 +26,16 @@ use a test checkout page, and hosting is simulated.
 
 ## 3. Try it
 1. Open `https://<your-project>.vercel.app/admin` and sign in as `admin`.
-2. Click **load 4 sample clients** (or import your own spreadsheet).
+2. Click **load 4 sample clients** (or import your own spreadsheet). To show a real
+   case study, click **Load Central Jersey Law** instead: it imports the client with
+   its site audit and two researched concepts (with real WordPress screenshots).
 3. Open a client > **Generate concepts** > **Approve selected**.
 4. **View portal as client** shows what the client sees. Rate sections, pick a favorite, try a checkout.
 5. **Outbox** shows the invite email waiting for your approval.
+6. After approving concepts, the client page shows the **Client portal link**. Portal
+   links use the production domain (or `APP_URL`), so share them once this code is on
+   production. Preview deployments are behind Vercel's login unless you create a
+   shareable link in Vercel.
 
 ## Later: turn on real services
 - **Outlook email:** register an app in Microsoft Entra with the Mail.Send application permission (steps at the top of `src/integrations/email/outlook.ts`), then set `EMAIL_PROVIDER=outlook`, `MS_TENANT_ID`, `MS_CLIENT_ID`, `MS_CLIENT_SECRET`, `OUTLOOK_SENDER`.
