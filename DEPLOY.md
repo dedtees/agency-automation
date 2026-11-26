@@ -1,28 +1,24 @@
-# Deploy the prototype (Vercel + Supabase)
+# Deploy the prototype (Vercel + Postgres)
 
 About 10 minutes. Everything stays in test mode: emails are only logged, payments
 use a test checkout page, and hosting is simulated.
 
-## 1. Create the database (Supabase)
-1. supabase.com > New project. Pick the US East region (closest to New Jersey and to Vercel's default region). Save the database password.
-2. Open the project > **Connect** (top bar) > **ORMs** > **Prisma**. Copy the two strings:
-   - `DATABASE_URL` (port 6543, ends with `?pgbouncer=true`)
-   - `DIRECT_URL` (port 5432)
-   Put your database password where they say `[YOUR-PASSWORD]`.
+## 1. Connect a database (Neon, from Vercel)
+1. In the Vercel project: **Storage** > **Create Database** > **Neon (Postgres)**, and connect it to the project for **Production** and **Preview**.
+2. That adds `DATABASE_URL` (pooled) and `DATABASE_URL_UNPOOLED` (direct) for you. The app uses the unpooled one for migrations, so you don't need `DIRECT_URL`.
 
-## 2. Create the app (Vercel)
-1. vercel.com > Add New > Project > import `dedtees/agency-automation`.
-2. Before clicking Deploy, open **Environment Variables** and add:
+Using Supabase instead? Project > **Connect** > **ORMs** > **Prisma** gives `DATABASE_URL` (port 6543) and `DIRECT_URL` (port 5432). Add both as environment variables.
+
+## 2. Add the app settings (Vercel)
+Project > **Settings** > **Environment Variables**, for Production and Preview:
 
 | Name | Value |
 |---|---|
-| `DATABASE_URL` | from Supabase (pooled, port 6543) |
-| `DIRECT_URL` | from Supabase (direct, port 5432) |
 | `ADMIN_PASSWORD` | a password for the admin pages (username is `admin`) |
 | `CRON_SECRET` | any long random string |
 | `AGENCY_NAME` | your agency's name (shown in emails) |
 
-3. Deploy. The build creates the database tables automatically. Tick **Production** and **Preview** for each variable so pull-request previews work too. (Without the database variables the deploy still succeeds, and the admin page tells you what is missing.)
+Then **Deployments** > latest > **Redeploy**. The build creates the database tables automatically (`prisma migrate deploy`). Without a database the deploy still succeeds, and the admin page tells you what is missing.
 
 ## 3. Try it
 1. Open `https://<your-project>.vercel.app/admin` and sign in as `admin`.

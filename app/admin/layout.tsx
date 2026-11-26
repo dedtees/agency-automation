@@ -8,7 +8,7 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
     return (
       <main>
         <h1>Almost there</h1>
-        <p>The app is deployed but has no database yet. Add <code>DATABASE_URL</code> and <code>DIRECT_URL</code> from Supabase in your Vercel project settings (Environment Variables), then redeploy. Steps are in DEPLOY.md.</p>
+        <p>The app is deployed but has no database yet. Connect a Postgres database in Vercel (Storage &gt; Neon sets <code>DATABASE_URL</code> for you), then redeploy. Steps are in DEPLOY.md.</p>
       </main>
     );
   }

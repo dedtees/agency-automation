@@ -1,8 +1,8 @@
 import { PrismaClient } from "@prisma/client";
 
-// The schema names DIRECT_URL (for migrations); fall back to DATABASE_URL so the
-// app still starts when only one connection string is set.
-process.env.DIRECT_URL ||= process.env.DATABASE_URL;
+// The schema names DIRECT_URL (for migrations). Neon's Vercel integration calls it
+// DATABASE_URL_UNPOOLED; with neither set, fall back to DATABASE_URL.
+process.env.DIRECT_URL ||= process.env.DATABASE_URL_UNPOOLED || process.env.DATABASE_URL;
 
 const g = globalThis as unknown as { __prisma?: PrismaClient };
 export const db: PrismaClient = g.__prisma ?? new PrismaClient();
